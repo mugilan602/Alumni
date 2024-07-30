@@ -1,0 +1,80 @@
+
+.form-side, .info-side {
+    flex: 1;
+    padding: 20px;
+}
+
+.form-side {
+    border-right: 1px solid #ddd;
+}
+
+.info-side {
+    background-color: #f7f7f7;
+}
+
+h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form  input{
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: #f4f4f4;
+    border-radius: 5px;
+    outline: none;
+    color: black;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.form label {
+    position: absolute;
+    left: 45px;
+    top: 10px;
+    background: #f4f4f4;
+    padding: 0 5px;
+    color: black;
+    pointer-events: none;
+    transition: transform 0.5s, color 0.5s;
+    transform-origin: left top;
+}
+
+.form input:focus + label,
+.form textarea:focus + label,
+.form input:valid + label,
+.form textarea:valid + label {
+    color: #007bff;
+    transform: translateX(10px) translateY(-20px);
+    padding: 0 5px;
+    border-left: 1px solid #007bff;
+    border-right: 1px solid #007bff;
+    letter-spacing: 0.1em;
+}
+
+.form-button {
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
