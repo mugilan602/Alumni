@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+.contactContainer {
+    display: flex;
+    max-width: 1000px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    flex-direction: row;
+}
+
+.contactInfo {
+    margin: 10px;
+}
+
+.contactInfo p {
+    margin: 10px 0;
+    color: #39414D;
+    font-size: 14px;
+    text-align: center;
+    margin: 12px;
+}
+
+.contactInfo p strong {
+    color: black;
+    font-size: 1.2em;
+}
+
+.contactInfo a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contactInfo a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.formSide, .infoSide {
+    flex: 1;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+.formSide {
+    border-right: 1px solid #ddd;
+}
+
+.infoSide {
+    background-color: #f7f7f7;
+}
+
+h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.formGroup {
+    position: relative;
+    margin-bottom: 20px;
+}
