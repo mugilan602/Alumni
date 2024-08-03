@@ -20,33 +20,36 @@ import Event from "./Veera Sir Event/Event";
 import { useAdminAuthContext } from "../hooks/useAdminAuthContext";
 import { useAuthContext } from "../hooks/useAuthContext";
 function App() {
-    const {admin} =useAdminAuthContext();
-    const {user} =useAuthContext();
-    return (
-        <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/signup" element={<Signup />} />
-            <Route path="/login" element={<Login />} />
-           {user &&  <Route path="/profile" element={<Profile />} />}
-            <Route path="/chapters" element={<ChaptersPage />} />
-            <Route path="/ceomessage" element={<CeoMessagePage />} />
-            <Route path="/principalmessage" element={<PrincipalMessage />} />
-            <Route path="/jobs" element={<Jobs />} />
-            <Route path="/eventspage" element={<EventsPage />} />
-            <Route path="/alumniDirectory" element={<AlumniDirectory />} />
-            <Route path="/aboutus" element={<AboutUsPage />} />
-            <Route path="/contactus" element={<ContactUsPage />} />
-            <Route path="/create-job" element={<CreateJob />} />
-            <Route path="/apply/:jobId" element={<JobApply />} />
-            <Route path="/event1" element={<Event />} />
-            
-            {!admin && <Route path="/adminlogin" element={<AdminLogin />} />}
-            {admin && <Route path="/adminpage" element={<AdminPage />} />}
-            {admin && <Route path="/applied-students/:jobId" element={<AppliedStudentsPage />} />}
+  const { admin } = useAdminAuthContext();
+  const { user } = useAuthContext();
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/signup" element={<Signup />} />
+      <Route path="/login" element={<Login />} />
+      {user && <Route path="/profile" element={<Profile />} />}
+      <Route path="/chapters" element={<ChaptersPage />} />
+      <Route path="/ceomessage" element={<CeoMessagePage />} />
+      <Route path="/principalmessage" element={<PrincipalMessage />} />
+      <Route path="/jobs" element={<Jobs />} />
+      <Route path="/eventspage" element={<EventsPage />} />
+      <Route path="/alumniDirectory" element={<AlumniDirectory />} />
+      <Route path="/aboutus" element={<AboutUsPage />} />
+      <Route path="/contactus" element={<ContactUsPage />} />
+      <Route path="/create-job" element={<CreateJob />} />
+      <Route path="/apply/:jobId" element={<JobApply />} />
+      <Route path="/event1" element={<Event />} />
 
-
-        </Routes>
-    );
+      {!admin && <Route path="/adminlogin" element={<AdminLogin />} />}
+      {admin && <Route path="/adminpage" element={<AdminPage />} />}
+      {admin && (
+        <Route
+          path="/applied-students/:jobId"
+          element={<AppliedStudentsPage />}
+        />
+      )}
+    </Routes>
+  );
 }
 
 export default App;
