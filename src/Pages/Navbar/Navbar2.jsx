@@ -54,18 +54,19 @@ const Navbar2 = () => {
             <li className=" text-black hover:text-[#005D99] pt-4  md:text-white text-center py-4  md:hover:text-[#FFCB29]">
               <Link to="/"> HOME</Link>
             </li>
-            <li className="text-black  hover:text-[#005D99] pt-4 md:text-white text-center py-4 md:hover:text-[#FFCB29]">
-              <Link to="/CeoMessage"> CEO's MESSAGE</Link>
-            </li>
-            <li className="text-black  hover:text-[#005D99] pt-4  md:text-white text-center py-4  md:hover:text-[#FFCB29]">
-              <Link to="/principalmessage">PRINCIPAL's MESSAGE</Link>
-            </li>
             <li className="text-black hover:text-[#005D99] pt-4 md:text-white text-center py-4   md:hover:text-[#FFCB29]">
               <Link to="/AboutUs">ABOUT US</Link>
             </li>
             <li className="text-black hover:text-[#005D99] pt-4 md:text-white text-center py-4 md:hover:text-[#FFCB29]">
               <Link to="/jobs">JOBS</Link>
             </li>
+            <li className="text-black  hover:text-[#005D99] pt-4 md:text-white text-center py-4 md:hover:text-[#FFCB29]">
+              <Link to="/">ALUMNI COORDINATORS</Link>
+            </li>
+            {/* <li className="text-black  hover:text-[#005D99] pt-4  md:text-white text-center py-4  md:hover:text-[#FFCB29]">
+              <Link to="/">ACHIEVEMENTS</Link>
+            </li> */}
+
             <li className="text-black hover:text-[#005D99] pt-4 md:text-white text-center py-4 md:hover:text-[#FFCB29]">
               <Link to="/alumniDirectory">ALUMNI DIRECTORY</Link>
             </li>

@@ -18,11 +18,13 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
+    "react-modal": "^3.16.1",
     "react-router-dom": "^6.22.3",
     "react-slick": "^0.30.2",
     "react-typed": "^2.0.12",
     "slick-carousel": "^1.8.1",
-    "swiper": "^11.1.4"
+    "swiper": "^11.1.8",
+    "tw-elements": "^2.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

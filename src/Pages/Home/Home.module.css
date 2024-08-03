@@ -1,0 +1,58 @@
+/* .gradientBackground {
+    background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    /* Vendor prefixes for compatibility 
+    background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    background: -ms-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#0061FF", endColorstr="#60EFFF", GradientType=1);
+    position: relative;
+    width: 70%;
+    height: 89%;
+} */
+
+/* Styles for CEO AND PRINCIPALS MESSAGE */
+.messageHeading {
+    color: #052f5f;
+}
+
+.modalImage {
+    height: 190px;
+    margin: auto;
+}
+
+.modalRight {
+    justify-content: center;
+    align-items: center;
+}
+
+.messageDiv {
+    background-color: aliceblue;
+}
+
+.image {
+    width: 75%;
+    height: 99%;
+    margin-left: 80px;
+}
+
+.chairman {
+    height: 125px;
+    margin: auto;
+}
+
+.leftMessage {
+    width: 40%;
+}
+
+.message {
+    width: 70%;
+}
+
+/* Styles for SAIRAM ALUMNI ASSOCIATION AND EVENTS */
+
+.listItem {
+    height: 100px;
+
+}
+
+/* Styles for notable members */

@@ -1,4 +1,4 @@
-import './LatestMembers.css'
+import styles from './NotableMembers.module.css'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import { ProductDataset } from "../../api/MockData.js";
@@ -47,7 +47,7 @@ const MemberLayout = () => {
     );
 };
 
-const LatestMembers = () => {
+const NotableMembers = () => {
     return (
         <>
             <MemberLayout />
@@ -55,4 +55,4 @@ const LatestMembers = () => {
     );
 };
 
-export default LatestMembers;
+export default NotableMembers;

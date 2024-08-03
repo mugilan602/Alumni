@@ -22,7 +22,6 @@ const Signup = () => {
   });
 
   const handleChange = (e) => {
-    // Check if the input is a file input (profileImage)
     if (e.target.name === "profileImage") {
       setFormData({ ...formData, profileImage: e.target.files[0] });
     } else {
@@ -33,10 +32,8 @@ const Signup = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
     try {
-      console.log(formData);
-      await signup(formData); // Ensure that your signup function accepts this format
+      await signup(formData);
     } catch (error) {
       console.error("Error in handleSignup:", error);
     }
@@ -48,7 +45,7 @@ const Signup = () => {
       <Campus />
       <div className="full container mx-auto px-4 py-8 bg-gray-50">
         <div className="w-[60%] mx-auto bg-white p-6 rounded-lg shadow-lg">
-          <h1 className="font-bold  text-2xl mb-4">Alumni Registration</h1>
+          <h1 className="font-bold text-2xl mb-4">Alumni Registration</h1>
           <form onSubmit={handleSubmit} encType="multipart/form-data">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
@@ -254,6 +251,8 @@ const Signup = () => {
                 />
               </div>
             </div>
+
+
             <div className="flex items-center mt-4">
               <label htmlFor="profileImage" className="block mb-1 mr-2">
                 Profile Image:
@@ -264,27 +263,30 @@ const Signup = () => {
                 id="profileImage"
                 onChange={handleChange}
                 accept="image/*"
-                required
                 className=" px-3 py-2 rounded-md"
               />
             </div>
-
             <button
               type="submit"
-              className="block px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 cursor-pointer ml-auto w-[17%] "
+              className="block px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 cursor-pointer ml-auto w-[17%]"
               disabled={loading}
             >
-              {loading ? "Signing Up..." : "Register"}
+              Register
             </button>
             <div className="items-center mb-6">
               {error && (
                 <p className="text-red-500 text-center mt-1 text-md">{error}</p>
               )}
+              {loading && (
+                <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center z-50">
+                  <img src="https://i.giphy.com/3oEjI6SIIHBdRxXI40.webp" alt="Loading..." className="w-16 h-16" />
+                </div>
+              )}
             </div>
           </form>
         </div>
-      </div>
-    </div>
+      </div >
+    </div >
   );
 };
 

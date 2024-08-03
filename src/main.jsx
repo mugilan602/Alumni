@@ -1,11 +1,12 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from "./Pages/App"
-import { BrowserRouter } from "react-router-dom"
-import Footer from "./Pages/Footer/Footer"
-import { AuthContextProvider } from './context/AuthContext'
-import { AdminAuthContextProvider } from './context/AdminAuthContext'
-ReactDOM.createRoot(document.getElementById('root')).render(
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./Pages/App";
+import { BrowserRouter } from "react-router-dom";
+import Footer from "./Pages/Footer/Footer";
+import { AuthContextProvider } from "./context/AuthContext";
+import { AdminAuthContextProvider } from "./context/AdminAuthContext";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <AdminAuthContextProvider>
       <AuthContextProvider>
@@ -15,5 +16,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </BrowserRouter>
       </AuthContextProvider>
     </AdminAuthContextProvider>
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
