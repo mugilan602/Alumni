@@ -4,7 +4,7 @@ import { useSignup } from "../../hooks/useSignup";
 import { Campus } from "../Campus/Campus";
 
 const Signup = () => {
-  const { signup, loading, error } = useSignup();
+  const { signup, loading, error, successMessage } = useSignup();
   const [formData, setFormData] = useState({
     profileImage: "",
     firstName: "",
@@ -37,6 +37,13 @@ const Signup = () => {
     } catch (error) {
       console.error("Error in handleSignup:", error);
     }
+  };
+
+  const handleOkClick = () => {
+    // Close the success message box
+    // This could involve setting state to hide the message, redirecting, etc.
+    // For example:
+    window.location.href = "/"; // Redirect after OK button click
   };
 
   return (
@@ -273,20 +280,40 @@ const Signup = () => {
             >
               Register
             </button>
+
             <div className="items-center mb-6">
-              {error && (
-                <p className="text-red-500 text-center mt-1 text-md">{error}</p>
-              )}
               {loading && (
                 <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center z-50">
                   <img src="https://i.giphy.com/3oEjI6SIIHBdRxXI40.webp" alt="Loading..." className="w-16 h-16" />
                 </div>
               )}
             </div>
+            {/* Error Message */}
+            {!loading && error && (
+              <p className="text-red-500 text-center text-md">{error}</p>
+            )}
           </form>
         </div>
-      </div >
-    </div >
+      </div>
+
+      {/* Success Message Modal */}
+      {successMessage && (
+        <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full">
+            <h2 className="text-xl font-semibold mb-4">Success</h2>
+            <p className="text-gray-700 mb-4">{successMessage}</p>
+            <button
+              onClick={handleOkClick}
+              className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+            >
+              OK
+            </button>
+          </div>
+        </div>
+      )}
+
+
+    </div>
   );
 };
 

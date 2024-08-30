@@ -32,12 +32,13 @@ const Jobs = () => {
       <Campus />
       <div className="lg:w-[85%] sm:w-[85%]container mx-auto px-4">
         <div className="flex justify-center mt-4">
-          <Link
-            to="/create-job"
+          <a
+            href="/create-job"
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            target='_top'
           >
             Post Job
-          </Link>
+          </a>
         </div>
         <div className="container mx-auto p-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

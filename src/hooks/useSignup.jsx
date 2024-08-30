@@ -19,12 +19,14 @@ export const useSignup = () => {
 
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [successMessage, setSuccessMessage] = useState(null); // Add this state
   const { dispatch } = useAuthContext();
   const navigate = useNavigate();
 
   const signup = async (formData) => {
     setError(null);
     setLoading(true);
+    setSuccessMessage(null); // Reset success message
 
     try {
       // Step 1: Submit the initial form data with profileImage as an empty string
@@ -81,21 +83,19 @@ export const useSignup = () => {
             setLoading(false);
             return;
           }
-
-          // Update local storage and context
-          const updatedData = { ...data, profileImage: downloadURL };
-          localStorage.setItem('user', JSON.stringify(updatedData));
-          dispatch({ type: 'LOGIN', payload: updatedData });
-          navigate('/');
-          window.scrollTo(0, 0);
+          setLoading(false); // Ensure loading state is reset
+          setSuccessMessage('Registration successful! You will receive an email once you are authorized.');
+          // Optionally, navigate to another page or perform additional actions
+          // navigate('/somewhere');
         }
       );
     } catch (error) {
+      console.error('Error during signup:', error);
       setError('Something went wrong. Please try again.');
-    } finally {
-      // setLoading(false);
     }
+
+
   };
 
-  return { signup, loading, error };
+  return { signup, loading, error, successMessage }; // Return the success message
 };
