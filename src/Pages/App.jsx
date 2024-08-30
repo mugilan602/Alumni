@@ -13,12 +13,16 @@ import ContactUsPage from "./ContactUs/ContactUs";
 import CreateJob from "./CreateJob/CreateJob";
 import JobApply from "./JobApply/JobApply";
 import AdminPage from "./AdminPage/AdminPage";
-import AppliedStudentsPage from "./AppliedStudents/AppliedStudents";
+import AdminJobs from "./AdminPage/AdminJobs";
+import AuthorizedAlumni from "./AdminPage/AuthorizedAlumni";
+import AppliedStudents from "./AdminPage/AppliedStudents";
 import AlumniDirectory from "./Alumni Directory/AlumniDirectory";
 import AdminLogin from "./Admin Login/AdminLogin";
 import Event from "./Veera Sir Event/Event";
 import { useAdminAuthContext } from "../hooks/useAdminAuthContext";
 import { useAuthContext } from "../hooks/useAuthContext";
+import UnAuthorizedAlumni from "./AdminPage/UnAuthorizedAlumni";
+import Students from "./AdminPage/Students";
 function App() {
   const { admin } = useAdminAuthContext();
   const { user } = useAuthContext();
@@ -45,7 +49,31 @@ function App() {
       {admin && (
         <Route
           path="/applied-students/:jobId"
-          element={<AppliedStudentsPage />}
+          element={<AppliedStudents />}
+        />
+      )}
+      {admin && (
+        <Route
+          path="/getJobs"
+          element={<AdminJobs />}
+        />
+      )}
+      {admin && (
+        <Route
+          path="/authorizedAlumni"
+          element={<AuthorizedAlumni />}
+        />
+      )}
+      {admin && (
+        <Route
+          path="/unauthorizedAlumni"
+          element={<UnAuthorizedAlumni />}
+        />
+      )}
+      {admin && (
+        <Route
+          path="/students"
+          element={<Students />}
         />
       )}
     </Routes>

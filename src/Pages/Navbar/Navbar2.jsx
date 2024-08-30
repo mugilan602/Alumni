@@ -51,30 +51,29 @@ const Navbar2 = () => {
           }
         >
           <ul className=" w-[100%]  flex flex-col justify-center items-center md:flex-row md:justify-evenly ">
-            <li className=" text-black hover:text-[#005D99] pt-4  md:text-white text-center py-4  md:hover:text-[#FFCB29]">
-              <Link to="/"> HOME</Link>
+            <li >
+              <Link className=" text-black hover:text-[#005D99] pt-4  md:text-white text-center py-4  md:hover:text-[#FFCB29]" to="/"> HOME</Link>
             </li>
-            <li className="text-black hover:text-[#005D99] pt-4 md:text-white text-center py-4   md:hover:text-[#FFCB29]">
-              <Link to="/AboutUs">ABOUT US</Link>
+            <li>
+              <Link className="text-black hover:text-[#005D99] pt-4 md:text-white text-center py-4   md:hover:text-[#FFCB29]" to="/AboutUs">ABOUT US</Link>
             </li>
             <li className="text-black hover:text-[#005D99] pt-4 md:text-white text-center py-4 md:hover:text-[#FFCB29]">
-              <Link to="/jobs">JOBS</Link>
+              <Link className="text-black hover:text-[#005D99] pt-4 md:text-white text-center py-4   md:hover:text-[#FFCB29]" to="/jobs">JOBS</Link>
             </li>
-            <li className="text-black  hover:text-[#005D99] pt-4 md:text-white text-center py-4 md:hover:text-[#FFCB29]">
-              <Link to="/">ALUMNI COORDINATORS</Link>
-            </li>
+            {/* <li className="text-black  hover:text-[#005D99] pt-4 md:text-white text-center py-4 md:hover:text-[#FFCB29]">
+              <Link className="text-black hover:text-[#005D99] pt-4 md:text-white text-center py-4   md:hover:text-[#FFCB29]" to="/">ALUMNI COORDINATORS</Link>
+            </li> */}
             {/* <li className="text-black  hover:text-[#005D99] pt-4  md:text-white text-center py-4  md:hover:text-[#FFCB29]">
               <Link to="/">ACHIEVEMENTS</Link>
             </li> */}
-
             <li className="text-black hover:text-[#005D99] pt-4 md:text-white text-center py-4 md:hover:text-[#FFCB29]">
-              <Link to="/alumniDirectory">ALUMNI DIRECTORY</Link>
+              <Link className="text-black hover:text-[#005D99] pt-4 md:text-white text-center py-4   md:hover:text-[#FFCB29]" to="/alumniDirectory">ALUMNI DIRECTORY</Link>
             </li>
             <li className="text-black hover:text-[#005D99] pt-4 md:text-white text-center  py-4 md:hover:text-[#FFCB29]">
-              <Link to="/EventsPage">EVENTS</Link>
+              <Link className="text-black hover:text-[#005D99] pt-4 md:text-white text-center py-4   md:hover:text-[#FFCB29]" to="/EventsPage">EVENTS</Link>
             </li>
             <li className="text-black hover:text-[#005D99] pt-4 md:text-white text-center py-4 md:hover:text-[#FFCB29]">
-              <Link to="/Contactus"> CONTACT US</Link>
+              <Link className="text-black hover:text-[#005D99] pt-4 md:text-white text-center py-4   md:hover:text-[#FFCB29]" to="/Contactus"> CONTACT US</Link>
             </li>
           </ul>
         </div>

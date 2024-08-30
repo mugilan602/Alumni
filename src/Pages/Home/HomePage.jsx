@@ -5,6 +5,8 @@ import Navbar2 from "../Navbar/Navbar2";
 import Carousel from "../../Components/Carousel";
 import CustomModal from "../../Components/Modal";
 import NotableMembers from "../Notable Members/NotableMembers";
+import home from '../../assets/home.jpg';
+
 function HomePage() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [principalModalIsOpen, setPrincipalModalIsOpen] = useState(false);
@@ -16,14 +18,14 @@ function HomePage() {
 
   const fullContent = (
     <>
-      <h1 className="text-2xl font-bold mb-5 ml-5">CEO Message:</h1>
-      <div className="flex">
+      <h1 className="mb-5 ml-5 text-2xl font-bold">CEO Message:</h1>
+      <div className="flex bg-white">
         <div className="w-[50%]">
-          <img className={`${styles.modalImage} +`} src="https://sairamuba.com/images/home-page-images/ceo.webp" alt="" />
+          <img className={`${styles.modalImage} +`} src={"https://sairamuba.com/images/home-page-images/ceo.webp"} alt="" />
         </div>
         <div className={`${styles.modalRight} w-[50%] flex`}>
           <div className={`${styles.modalText} + justify-center items-center`}>
-            <h4 className="text-xl text-center font-semibold">
+            <h4 className="text-xl font-semibold text-center text-black">
               Sri Sai Prakash Leo Muthu
             </h4>
             <p className="text-lg text-center">Chairman & CEO</p>
@@ -43,14 +45,14 @@ function HomePage() {
   );
   const principalFullContent = (
     <>
-      <h1 className="text-2xl font-bold mb-5 ml-5">Principal's Message:</h1>
+      <h1 className="mb-5 ml-5 text-2xl font-bold">Principal's Message:</h1>
       <div className="flex">
         <div className="w-[50%]">
           <img className={`${styles.modalImage}`} src="https://sairamuba.com/images/home-page-images/new-principal.webp" alt="Principal" />
         </div>
         <div className={`${styles.modalRight} w-[50%] flex`}>
           <div className={`${styles.modalText} justify-center items-center`}>
-            <h4 className="text-xl text-center font-semibold">
+            <h4 className="text-xl font-semibold text-center">
               Dr. k.Raja
             </h4>
             <p className="text-lg text-center">Principal</p>
@@ -90,7 +92,7 @@ function HomePage() {
 
 
 
-      <section className="pt-10 pl-10 pr-10">
+      <section className="pt-10 pl-10 pr-10 bg-white">
         {/* First section  */}
         <div className="flex">
           <Carousel />
@@ -102,10 +104,10 @@ function HomePage() {
             <p>-Exchange opportunities</p>
           </div>
         </div> */}
-          <div className={`${styles.right} + `}>
+          <div className={`${styles.right} + bg-white`}>
             <img
               className={`${styles.image}`}
-              src="https://ik.imagekit.io/xetccow0b/register.jpg?updatedAt=1722361346806"
+              src={home}
               alt=""
             />
           </div>
@@ -115,38 +117,21 @@ function HomePage() {
       {/* Chairman's Message */}
 
 
-      <section className="p-10">
-        <h1 className={`text-2xl font-bold mb-4 + ${styles.messageHeading} + underline underline-offset-8 decoration-blue-900 `}>Chairman's Message:</h1>
-        <div className={`flex shadow-2xl p-4 ${styles.messageDiv}`}>
-          <div className={`${styles.leftMessage} flex-shrink-0 w-[20%] ml-10`}>
-            <img
-              className={`${styles.chairman} + mt-2`}
-              src="https://sairamuba.com/images/home-page-images/ceo.webp"
-              alt="Chairman"
-            />
-            <h4 className="text-xl text-center font-semibold mt-4">
-              Sri Sai Prakash Leo Muthu
-            </h4>
-            <p className="text-lg text-center">Chairman & CEO</p>
-            <p className="text-lg text-center">Sairam Group of Institutions</p>
+      <section className="p-10 bg-white font-poppins">
+        <h1 className="mb-4 text-2xl font-bold tracking-widest text-gray-700 uppercase ">CEO Message</h1>
+        <div className="flex p-6 bg-white rounded-lg shadow-2xl drop-shadow-2xl">
+          <div className="flex-shrink-0 w-1/5 ml-10 mr-10 text-center">
+            <img className="w-full h-auto mt-2" src="https://sairamuba.com/images/home-page-images/ceo.webp" alt="CEO" />
+            <h4 className="mt-4 font-semibold tracking-widest text-gray-900 uppercase">Sri Sai Prakash Leo Muthu</h4>
+            <p className="font-medium text-gray-700">Chairman & CEO</p>
+            <p className="font-medium text-gray-700">Sairam Group of Institutions</p>
           </div>
-          <div className={`${styles.message} w-[70%] ml-10 mt-5 `}>
-            <p className="text-justify">
-              Our alumni, who once walked these corridors as students, have
-              soared to great heights, becoming beacons of inspiration in every
-              field imaginable. I am filled with a sense of pride in observing
-              their glorious growth and contribution in their chosen spheres. We
-              connect with immense value for being SAIRAMITES forever. Amongst
-              us, we have luminaries like Dr. Veera Muthuvel, the esteemed
-              director of the Chandrayaan mission, the distinguished individuals
-              who have been serving with distinction as IASs, IPSs, CEOs and
-              acclaimed Entrepreneurs. Their achievements are a testament to
-              their individual brilliance as well as the reflection of the solid
-              foundation our institution has provided.
+          <div className="w-3/5 mt-20 ml-20 font-medium">
+            <p className="font-medium text-justify text-gray-700 font-poppins">
+              Our alumni, who once walked these corridors as students, have soared to great heights, becoming beacons of inspiration in every field imaginable. I am filled with a sense of pride in observing their glorious growth and contribution in their chosen spheres. We connect with immense value for being SAIRAMITES forever. <br /><br />
+              Amongst us, we have luminaries like Dr. Veera Muthuvel, the esteemed director of the Chandrayaan mission, the distinguished individuals who have been serving with distinction as IASs, IPSs, CEOs and acclaimed Entrepreneurs. Their achievements are a testament to their individual brilliance as well as the reflection of the solid foundation our institution has provided.
             </p>
-            <button onClick={handleOpenModal} className="text-blue-500 mt-4">
-              Read More
-            </button>
+            <button onClick={handleOpenModal} className="mt-4 font-medium text-blue-700 hover:text-blue-500">Read More</button>
           </div>
         </div>
       </section>
@@ -154,38 +139,43 @@ function HomePage() {
 
 
       {/* Principal's Message */}
-      <section className="p-10">
-        <h1 className={`text-2xl font-bold mb-4 + ${styles.messageHeading} + underline underline-offset-8 decoration-blue-900 `}>Principal's Message:</h1>
-        <div className={`flex shadow-2xl p-4 ${styles.messageDiv}`}>
-          <div className={`${styles.leftMessage} flex-shrink-0 w-[20%] ml-10`}>
+      <section className="p-10 bg-white font-poppins">
+        <h1 className="mb-4 text-2xl font-bold tracking-widest text-gray-700 uppercase ">
+          Principal's Message:
+        </h1>
+        <div className="flex p-6 bg-white rounded-lg shadow-2xl drop-shadow-2xl">
+          <div className="flex-shrink-0 w-1/5 ml-10 text-center">
             <img
-              className={`${styles.chairman} + mt-2`}
+              className="w-full h-auto mt-2"
               src="https://sairamuba.com/images/home-page-images/new-principal.webp"
               alt="Principal"
             />
-            <h4 className="text-xl text-center font-semibold mt-4">
-              Dr. k .Raja
+            <h4 className="mt-4 font-semibold tracking-widest text-gray-900 uppercase">
+              Dr. K. Raja
             </h4>
-            <p className="text-lg text-center">Principal</p>
-            <p className="text-lg text-center">Sairam Engineering College</p>
+            <p className="font-medium text-gray-700">Principal</p>
+            <p className="font-medium text-gray-700">Sairam Engineering College</p>
           </div>
-          <div className={`${styles.message} w-[70%] ml-10 mt-5 `}>
-            <p className="text-justify items-center">
-              It gives us immense pleasure to observe that SAIRAM ALUMNI FRATERNITY who emerged from
-              the hallowed halls of our esteemed institution is gathering to rejoice and share at the same
-              campus on 18 th November 2023.
+          <div className="w-3/5 mt-10 ml-20 font-medium text-gray-700">
+            <p className="text-justify">
+              It gives us immense pleasure to observe that SAIRAM ALUMNI FRATERNITY, who emerged from
+              the hallowed halls of our esteemed institution, is gathering to rejoice and share at the same
+              campus on 18th November 2023.
+              <br /><br />
               Our alumni, the pride of Sri Sairam Engineering College, have etched their names in the annals of
               success across various domains. Their journeys from these classrooms to the zenith of their
               careers exemplify the caliber of education and values imparted here.
+              <br /><br />
               We take immense pleasure in our alumni whose contributions from their specific roles and as
-              individuals have inspired not only our nation but also the global community
+              individuals have inspired not only our nation but also the global community.
             </p>
-            <button onClick={handleOpenPrincipalModal} className="text-blue-500 mt-4">
+            <button onClick={handleOpenPrincipalModal} className="mt-4 text-blue-700 hover:text-blue-500">
               Read More
             </button>
           </div>
         </div>
       </section>
+
       <CustomModal
         isOpen={modalIsOpen}
         onRequestClose={handleCloseModal}
@@ -199,32 +189,32 @@ function HomePage() {
 
       {/* Events and About Sairam Alumni Association */}
 
-      <section className="p-10">
-        <div className="flex">
-          <div className="w-[70%]">
-            <h1>About Sairam Alumni Association</h1>
-            <p className="text-justify mt-5">
-              Alumni Association
+      <section className="p-10 text-gray-700 bg-white font-poppins">
+        <div className="flex gap-5">
+          {/* About Sairam Alumni Association Card */}
+          <div className="w-[70%] bg-white shadow-2xl rounded-lg p-6 drop-shadow-2xl">
+            <h1 className="mb-4 text-2xl tracking-widest uppercase underline-offset-8">About Sairam Alumni Association</h1>
+            <p className="mt-5 text-justify">
               The Alumni Association of Sairam Engineering College is proudly managed by a dedicated Alumni Committee. The association plays a pivotal role in fostering strong relationships among alumni, faculty, and the college administration. Beyond supporting our alumni in various ways, the association actively contributes to the college's pursuit of its goals, vision, and mission. <br /> <br />
               Sairam Engineering College is delighted to cultivate a vibrant and engaged Alumni Network. We warmly invite you to join this network, which serves as a platform for seamless communication among SEC alumni. This initiative offers a wonderful opportunity for our alumni to reconnect with their alma mater and continue to be a part of our extended family.
             </p>
           </div>
-          <div className="ml-5">
-            <h1>Events:</h1>
-            <div className="mt-5">
-              <ul>
-                <li className={`${styles.listItem}`}>
-                  <a href="">Chandrayaan 3 Celebration</a>
-                </li>
-                <li className={`${styles.listItem}`}>
-                  <a href="">Alumni meet 2023</a>
-                </li>
-              </ul>
-            </div>
+
+          {/* Events Card */}
+          <div className="w-[30%] bg-white shadow-2xl rounded-lg p-6 drop-shadow-2xl">
+            <h1 className="mb-4 text-2xl tracking-widest uppercase underline-offset-8">Events</h1>
+            <ul className="mt-5 space-y-4">
+              <li>
+                <a href="http://localhost:5173/event1" className="text-blue-500 hover:underline">Chandrayaan 3 Celebration</a>
+              </li>
+              <li>
+                <a href="http://localhost:5173/event1" className="text-blue-500 hover:underline">Alumni Meet 2023</a>
+              </li>
+            </ul>
           </div>
         </div>
-
       </section>
+
       {/* Notable Members */}
       <section>
         <NotableMembers />
