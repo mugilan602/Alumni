@@ -9,7 +9,7 @@ const Students = () => {
             try {
                 const response = await fetch('http://localhost:3000/api/admin/getAllAppliedStudents'); // Adjust the endpoint as needed
                 if (!response.ok) {
-                    throw new Error('Network response was not ok');
+                    throw new Error('No students found');
                 }
                 const data = await response.json();
                 setStudents(data.students);

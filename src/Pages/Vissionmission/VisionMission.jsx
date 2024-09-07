@@ -7,8 +7,8 @@ function App() {
   return (
     <>
       <div className={styles.container2xl}>
-        <div className={`${styles.sContainer} ${styles.col12} ${styles.colSm12} ${styles.colMd8} ${styles.colLg9} ${styles.colXl9} ${styles.colXxl9}`}>
-          
+        <div className={`${styles.sContainer}`}>
+
           <h2 className={styles.vmSubheading}>VISION</h2>
           <p className={styles.vmParagraph}>
             The Vision of Sri Sai Ram Alumni Association is to create a strong bond between the institute and its alumni through a mutually beneficial network.
@@ -20,7 +20,7 @@ function App() {
             <li>To act as a hub between Alumni and the Institute.</li>
             <li>To encourage Alumni to contribute to the Institution's development.</li>
           </ul>
-          
+
           <h2 className={styles.vmSubheading}>GOALS</h2>
           <ul className={styles.vmList}>
             <li>Identifying potential Alumni firms for current students training, internships and Placements.</li>
