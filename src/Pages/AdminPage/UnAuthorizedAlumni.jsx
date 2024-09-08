@@ -7,7 +7,15 @@ const UnAuthorizedAlumni = () => {
     useEffect(() => {
         const fetchAlumni = async () => {
             try {
-                const response = await fetch('http://localhost:3000/api/admin/unauthorized-users');
+                // Fetch department from localStorage
+                const department = localStorage.getItem('selectedDepartment');
+
+                // Construct the URL with the department filter if it exists
+                const url = department
+                    ? `http://localhost:3000/api/admin/unauthorized-users?department=${department}`
+                    : 'http://localhost:3000/api/admin/unauthorized-users';
+
+                const response = await fetch(url);
                 if (!response.ok) {
                     throw new Error('Failed to fetch unauthorized alumni');
                 }
@@ -33,8 +41,7 @@ const UnAuthorizedAlumni = () => {
             if (!response.ok) {
                 throw new Error('Failed to authorize user');
             }
-            const result = await response.json();
-            // Update the local state to reflect the changes
+            // Remove the authorized user from the list
             setAlumni((prevAlumni) => prevAlumni.filter((alumnus) => alumnus._id !== userId));
             alert('User authorized successfully!');
         } catch (error) {

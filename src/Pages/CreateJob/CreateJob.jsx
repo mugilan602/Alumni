@@ -9,22 +9,24 @@ const CreateJob = () => {
   const [title, setTitle] = useState("");
   const [company, setCompany] = useState("");
   const [pay, setPay] = useState("");
-  const [experience, setExperience] = useState("");
-
+  const [location, setlocation] = useState("");
+  const [domain, setDomain] = useState("");
   const handleSubmit = (event) => {
     event.preventDefault();
     const jobDetails = {
       title,
       company,
       pay,
-      experience,
+      location,
+      domain
     };
     createJob(jobDetails);
     // Optionally reset form fields or perform other actions after job creation
     setTitle("");
     setCompany("");
     setPay("");
-    setExperience("");
+    setlocation("");
+    setDomain("");
   };
 
   return (
@@ -91,14 +93,32 @@ const CreateJob = () => {
               <div className={styles["form-group"]}>
                 <input
                   type="text"
-                  id="experience"
-                  value={experience}
-                  onChange={(e) => setExperience(e.target.value)}
+                  id="location"
+                  value={location}
+                  onChange={(e) => setlocation(e.target.value)}
                   required
                   className={`mt-1 block w-[85%] mx-auto px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
                 />
-                <label htmlFor="experience">Experience</label>
+                <label htmlFor="location">Location</label>
               </div>
+              <div className={styles["form-group"]}>
+                <select
+                  id="domain"
+                  value={domain}
+                  onChange={(e) => setDomain(e.target.value)}
+                  required
+                  className="mt-1 block w-[85%] mx-auto px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                >
+                  <option value="">Domain</option>
+                  {['Business Development', 'Design', 'Healthcare', 'Information Technology', 'Manufacturing', 'Marketing', 'Other', 'Software', 'Technology', 'Telecommunications'].map((option) => (
+                    <option key={option} value={option}>
+                      {option}
+                    </option>
+                  ))}
+                </select>
+                <label htmlFor="domain"></label>
+              </div>
+
               <button
                 type="submit"
                 className={`bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline ${styles["form-button"]}`}

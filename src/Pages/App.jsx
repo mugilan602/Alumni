@@ -23,6 +23,7 @@ import { useAdminAuthContext } from "../hooks/useAdminAuthContext";
 import { useAuthContext } from "../hooks/useAuthContext";
 import UnAuthorizedAlumni from "./AdminPage/UnAuthorizedAlumni";
 import Students from "./AdminPage/Students";
+import AlumniTestimonials from "./Alumni Testimonials/AlumniTestimonials";
 function App() {
   const { admin } = useAdminAuthContext();
   const { user } = useAuthContext();
@@ -38,6 +39,8 @@ function App() {
       <Route path="/jobs" element={<Jobs />} />
       <Route path="/eventspage" element={<EventsPage />} />
       <Route path="/alumniDirectory" element={<AlumniDirectory />} />
+      <Route path="/alumniTestimonials" element={<AlumniTestimonials />} />
+
       <Route path="/aboutus" element={<AboutUsPage />} />
       <Route path="/contactus" element={<ContactUsPage />} />
       <Route path="/create-job" element={<CreateJob />} />

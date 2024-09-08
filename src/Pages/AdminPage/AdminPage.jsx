@@ -5,44 +5,36 @@ const AdminPage = () => {
   const [jobCount, setJobCount] = useState(0);
   const [authorizedAlumniCount, setAuthorizedAlumniCount] = useState(0);
   const [studentsCount, setStudentsCount] = useState(0);
-  const [selectedDepartment, setSelectedDepartment] = useState(null); // New state for selected department
+  const [selectedDepartment, setSelectedDepartment] = useState(
+    localStorage.getItem('selectedDepartment') || null // Get the department from local storage on initial load
+  );
   const [error, setError] = useState(null);
 
   const departments = [
-    "AI & DS",
-    "ECE",
-    "MECH",
-    "EIE",
-    "CSE (IoT)",
-    "M.Tech CSE",
-    "CSBS",
-    "IT",
-    "CIVIL",
-    "MBA",
-    "EEE",
-    "CSE",
-    "ICE",
-    "CSE (AI & ML)",
-    "Mechanical and Automation",
+    "AI & DS", "ECE", "MECH", "EIE", "CSE (IoT)", "M.Tech CSE", "CSBS", "IT",
+    "CIVIL", "MBA", "EEE", "CSE", "ICE", "CSE (AI & ML)", "Mechanical and Automation"
   ];
 
+  // Function to fetch counts based on the selected department
   useEffect(() => {
     const fetchCounts = async () => {
       try {
+        const departmentQuery = selectedDepartment ? `?department=${selectedDepartment}` : '';
+
         // Fetch job count
-        const jobResponse = await fetch('http://localhost:3000/api/admin/getJobCount');
+        const jobResponse = await fetch(`http://localhost:3000/api/admin/getJobCount`);
         if (!jobResponse.ok) throw new Error('Failed to fetch job count');
         const jobData = await jobResponse.json();
         setJobCount(jobData.jobCount);
 
         // Fetch authorized alumni count
-        const authorizedResponse = await fetch('http://localhost:3000/api/admin/unauthorized-alumni-count');
+        const authorizedResponse = await fetch(`http://localhost:3000/api/admin/unauthorized-alumni-count${departmentQuery}`);
         if (!authorizedResponse.ok) throw new Error('Failed to fetch authorized alumni count');
         const authorizedData = await authorizedResponse.json();
         setAuthorizedAlumniCount(authorizedData.unauthorizedCount);
 
         // Fetch applied students count
-        const studentsResponse = await fetch('http://localhost:3000/api/admin/getAppliedStudentsCount');
+        const studentsResponse = await fetch(`http://localhost:3000/api/admin/getAppliedStudentsCount${departmentQuery}`);
         if (!studentsResponse.ok) throw new Error('Failed to fetch students count');
         const studentsData = await studentsResponse.json();
         setStudentsCount(studentsData.studentsCount);
@@ -53,10 +45,11 @@ const AdminPage = () => {
     };
 
     fetchCounts();
-  }, []);
+  }, [selectedDepartment]); // Refetch data whenever the selected department changes
 
   const handleDepartmentClick = (department) => {
     setSelectedDepartment(department); // Set the clicked department as the selected one
+    localStorage.setItem('selectedDepartment', department); // Persist department in local storage
   };
 
   if (error) {
@@ -87,7 +80,7 @@ const AdminPage = () => {
               <img src="https://militaryhealthinstitute.org/wp-content/uploads/sites/37/2021/08/blank-profile-picture-png.png" alt="Students" />
             </div>
             <h2 className="mt-4 text-lg font-semibold">Students</h2>
-            <p className="text-gray-600">Count: {studentsCount}</p>
+            <p className="text-gray-600">Count: {studentsCount !== undefined ? studentsCount : 0}</p>
           </div>
         </div>
 
@@ -104,8 +97,6 @@ const AdminPage = () => {
             </button>
           ))}
         </div>
-
-
       </div>
     </div>
   );

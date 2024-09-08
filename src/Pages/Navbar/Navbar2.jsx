@@ -69,6 +69,9 @@ const Navbar2 = () => {
             <li className="text-black hover:text-[#005D99] pt-4 md:text-white text-center py-4 md:hover:text-[#FFCB29]">
               <Link className="text-black hover:text-[#005D99] pt-4 md:text-white text-center py-4   md:hover:text-[#FFCB29]" to="/alumniDirectory">ALUMNI DIRECTORY</Link>
             </li>
+            <li className="text-black hover:text-[#005D99] pt-4 md:text-white text-center py-4 md:hover:text-[#FFCB29]">
+              <Link className="text-black hover:text-[#005D99] pt-4 md:text-white text-center py-4   md:hover:text-[#FFCB29]" to="/alumniTestimonials">ALUMNI TESTIMONIALS</Link>
+            </li>
             <li className="text-black hover:text-[#005D99] pt-4 md:text-white text-center  py-4 md:hover:text-[#FFCB29]">
               <Link className="text-black hover:text-[#005D99] pt-4 md:text-white text-center py-4   md:hover:text-[#FFCB29]" to="/EventsPage">EVENTS</Link>
             </li>

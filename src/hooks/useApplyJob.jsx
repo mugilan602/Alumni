@@ -26,14 +26,14 @@ const useApplyJob = () => {
 
         try {
             // Form validation
-            if (!formData.name || !formData.email || !formData.phoneNumber || !formData.resume) {
+            if (!formData.name || !formData.email || !formData.phoneNumber || !formData.resume || !formData.department || !formData.studentId) {
                 throw new Error('Please fill out all fields.');
             }
-            console.log(formData);
+
             const storage = getStorage(app);
             const file = formData.resume;
             const fileName = `${formData.email}_${Date.now()}_${file.name}`; // Generate a unique filename
-            const storageRef = ref(storage, `Resume/${fileName}`); // Adjust the storage path as needed
+            const storageRef = ref(storage, `Resumes/${fileName}`); // Adjust the storage path as needed
             const uploadTask = uploadBytesResumable(storageRef, file);
 
             // Upload progress monitoring
@@ -52,15 +52,19 @@ const useApplyJob = () => {
                         console.log('File available at', downloadURL);
 
                         // Update formData with the downloadURL
-                        formData.resume = downloadURL;
+                        const updatedFormData = {
+                            ...formData,
+                            resume: downloadURL,
+                        };
 
                         // API call to submit job application
                         const response = await fetch(`http://localhost:3000/api/user/apply/${jobId}`, {
                             method: 'POST',
                             headers: {
-                                'Content-Type': 'application/json'
+                                'Content-Type': 'application/json',
+                                'Authorization': `Bearer ${user?.token}` // Include auth token if available
                             },
-                            body: JSON.stringify(formData),
+                            body: JSON.stringify(updatedFormData),
                         });
 
                         if (!response.ok) {

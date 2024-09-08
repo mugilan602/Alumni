@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function JobCard({ job }) {
-  const { _id, title, company, pay, experience, location } = job;
+  const { _id, title, company, pay, location } = job;
   const jobId = _id;
 
   return (
@@ -20,9 +20,7 @@ function JobCard({ job }) {
         <p className="mb-2 text-gray-700">
           <strong>Salary:</strong> {pay}
         </p>
-        <p className="mb-4 text-gray-700">
-          <strong>Experience:</strong> {experience}
-        </p>
+
         <Link
           to={`/apply/${jobId}`}
           className="block bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-700 transition-colors duration-300"

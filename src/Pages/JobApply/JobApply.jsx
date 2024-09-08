@@ -3,13 +3,16 @@ import { useParams } from "react-router-dom";
 import useApplyJob from "../../hooks/useApplyJob";
 import { Campus } from "../Campus/Campus";
 import Navbar2 from "../Navbar/Navbar2";
+
 const JobApply = () => {
   const { jobId } = useParams();
   const { loading, error, successMessage, applyForJob } = useApplyJob();
-  const [formData, setFormData] = React.useState({
+  const [formData, setFormData] = useState({
     name: "",
     email: "",
     phoneNumber: "",
+    department: "",
+    studentId: "",
     resume: null,
   });
 
@@ -24,7 +27,6 @@ const JobApply = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log(formData.resume);
     applyForJob(jobId, formData);
   };
 
@@ -93,6 +95,40 @@ const JobApply = () => {
           </div>
           <div className="mb-4">
             <label
+              htmlFor="department"
+              className="block text-gray-700 text-sm font-bold mb-2"
+            >
+              Department:
+            </label>
+            <input
+              type="text"
+              id="department"
+              name="department"
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              value={formData.department}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label
+              htmlFor="studentId"
+              className="block text-gray-700 text-sm font-bold mb-2"
+            >
+              Student ID:
+            </label>
+            <input
+              type="text"
+              id="studentId"
+              name="studentId"
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              value={formData.studentId}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label
               htmlFor="resume"
               className="block text-gray-700 text-sm font-bold mb-2"
             >
@@ -111,9 +147,8 @@ const JobApply = () => {
           <div className="flex items-center justify-between">
             <button
               type="submit"
-              className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ${
-                loading ? "opacity-50 cursor-not-allowed" : ""
-              }`}
+              className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ${loading ? "opacity-50 cursor-not-allowed" : ""
+                }`}
               disabled={loading}
             >
               {loading ? "Applying..." : "Apply"}

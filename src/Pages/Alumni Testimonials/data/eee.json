@@ -1,0 +1,36 @@
+[
+    {
+        "name": "R. Prashanthi",
+        "batch": "2013-2017",
+        "designation": "Quality Analyst",
+        "company_name": "Amazon",
+        "location": "Chennai",
+        "department": "EEE",
+        "testimonial": "College life always holds a special place in my heart. The faculties were the backbone during those 4 years. Right from lab assistants to professors to HOD every single person helped us perform well in everything we did. They are one of the reasons many of us are successful in our career today. Be it academics, sports, cultural activities, SEC gave us the exposure we wanted. It has been the best in all areas possible. College life is always special to me in many ways and will remain a wonderful memory. Proud to be an alumni of Sairam institution."
+    },
+    {
+        "name": "Vishal Melvin Rex",
+        "batch": "2017-2021",
+        "designation": "Associate Project Engineer",
+        "company_name": "Hitachi Energy",
+        "department": "EEE",
+        "testimonial": "My college life in Sairam Engineering was enriched by my involvement in the National Service Scheme (NSS). Balancing academic pursuits with NSS activities added a dynamic dimension to my journey. Engaging in community service projects and camps allowed me to contribute meaningfully to society while forging lasting friendships with like-minded individuals. The NSS experience instilled a sense of social responsibility, teaching me the value of empathy and collective effort. These endeavors, whether organizing community events or participating in outreach programs, left an indelible mark on my college years, fostering personal growth and a profound appreciation for the impact one can have beyond the classroom. Special thanks to my Mentees and department staffs."
+    },
+    {
+        "name": "Mohammed Hanif",
+        "batch": "2012-2016",
+        "designation": "Senior Electrical Engineer",
+        "company_name": "Electrical Industries Company (EIC)",
+        "location": "Saudi Arabia",
+        "department": "EEE",
+        "testimonial": "Besides providing a good education, Sairam is very prudent towards its students in developing their interpersonal flexibility, physical activity. The very well-known saying 'enter to learn and leave to serve' has been an inspiration for me while being in college. Sairam has played a significant role in shaping my identity as an engineer and I am deeply grateful."
+    },
+    {
+        "name": "A Karthik",
+        "batch": "2014-2018",
+        "designation": "Senior UI Developer",
+        "company_name": "EdgeVerve Pvt Ltd",
+        "department": "EEE",
+        "testimonial": "I am glad that I could get a seat in Sairam Engineering college through the Anna University Counseling process. I studied EEE at Sairam Institution from 2014 to 2018 and secured 41st Rank. It was an amazing experience studying in a great institute. The institute gave me an extraordinary exposure to the outside world by way of guiding me to develop a novel solution to a long time societal issue. Staff at Sairam institutions are well known, trained and have been experts in subject matters. Their nature of communication and domain expertise had inspired me a lot to gain deeper understandings of fundamentals and advanced concepts. I would like to extend my gratitude for shaping my career."
+    }
+]

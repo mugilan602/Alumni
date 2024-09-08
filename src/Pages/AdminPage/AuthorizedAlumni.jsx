@@ -7,7 +7,15 @@ const AuthorizedAlumni = () => {
     useEffect(() => {
         const fetchAlumni = async () => {
             try {
-                const response = await fetch('http://localhost:3000/api/admin/authorized-users'); // Adjust the endpoint as needed
+                // Fetch department from localStorage
+                const department = localStorage.getItem('selectedDepartment');
+
+                // Construct the URL with the department filter if it exists
+                const url = department
+                    ? `http://localhost:3000/api/admin/authorized-users?department=${department}`
+                    : 'http://localhost:3000/api/admin/authorized-users';
+
+                const response = await fetch(url);
                 if (!response.ok) {
                     throw new Error('Failed to fetch authorized alumni');
                 }
