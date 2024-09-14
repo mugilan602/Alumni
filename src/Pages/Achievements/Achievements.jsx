@@ -22,15 +22,7 @@ const Achievements = () => {
             achievement: "Flight Lieutenant S.S. Mythraye (2012 batch) was honored to lead the Guard of Honor during the inspection of the  Vadsar base by Air Marshal H.S. Arora, AOC-in-C SWAC. Air Marshal Arora shared his experience as Air Defence Commander and DG Air Ops, praising the base’s operational readiness.",
             photo: 'https://ece.sairam.edu.in/wp-content/uploads/sites/4/2023/09/alumni20192.png',
         },
-        {
-            name: 'S.Sairam',
-            batch: 'Batch 2017',
-            department: 'EEE DEPARTMENT',
-            achievement: `Founder,<br />
-            Smart Vidhyashram,<br />
-            Munich, Germany`,
-            photo: "https://eee.sairam.edu.in/wp-content/uploads/sites/5/2023/09/alumini-distinguished-sairam.png",
-        },
+
         {
             name: 'Hari Vignesh',
             batch: 'Batch 2012',
@@ -63,8 +55,16 @@ const Achievements = () => {
             achievement: "  Mr. Rajakumar Sampathkumar Senior Technical Account Manager, Amazon, Greater NewYork City Area, USA 2003 3 PUBLICATIONS - Disruptive Cloud Computing and IT, Vulnerability Management for Cloud Computing - 2014: A Cloud Computing Security Essential ENIAC and ARPANET to Cloud",
             photo: Rajakumar,
         },
+        {
+            name: 'S.Sairam',
+            batch: 'Batch 2017',
+            department: 'EEE DEPARTMENT',
+            achievement: `Founder,<br />
+            Smart Vidhyashram,<br />
+            Munich, Germany`,
+            photo: "https://eee.sairam.edu.in/wp-content/uploads/sites/5/2023/09/alumini-distinguished-sairam.png",
+        },
 
-       
     ];
 
     return (

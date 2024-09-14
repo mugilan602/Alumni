@@ -20,21 +20,21 @@ function Events() {
         },
         {
             id: 3,
-            image: 'https://via.placeholder.com/300x150',
-            name: 'AI Expo',
-            date: '2023-04-05 11:30 AM',
+            image: '/images/Alumni Talk CSE/image070.gif',
+            name: 'Career and Academic Opportunities',
+            date: '2020-10-17 12:00 PM',
         },
         {
             id: 4,
-            image: 'https://via.placeholder.com/300x150',
-            name: 'Startup Workshop',
-            date: '2023-05-01 9:00 AM',
+            image: '/images/Alumni Talk CSE/image072.jpg',
+            name: 'Optimization With Linear Programming',
+            date: '2022-05-23 10:00 AM',
         },
         {
             id: 5,
-            image: 'https://via.placeholder.com/300x150',
-            name: 'Developer Meetup',
-            date: '2023-06-10 5:00 PM',
+            image: '/images/Alumni Talk CSE/image087.png',
+            name: 'Alumni Talk on Production Management',
+            date: '2020-06-12 6:00 PM',
         },
     ];
 
