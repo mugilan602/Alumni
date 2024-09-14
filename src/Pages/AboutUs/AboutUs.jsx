@@ -8,7 +8,7 @@ const AboutUs = () => {
   return (
     <>
       <Navbar2 />
-      <Campus/>
+      <Campus />
       <VisionMission />
     </>
   );

@@ -1,0 +1,38 @@
+/* EventDetails.module.css */
+
+.eventDetailsWrapper {
+    padding: 2rem;
+}
+
+.eventTitle {
+    color: #5a2d82;
+    /* Adjust as per design */
+}
+
+.carouselContainer {
+    position: relative;
+    overflow: hidden;
+}
+
+.carouselImage {
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    transform: translateX(-100%);
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.prevButton,
+.nextButton {
+    transition: background-color 0.3s ease;
+}
+
+.counter {
+    transition: background-color 0.3s ease;
+}

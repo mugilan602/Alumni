@@ -1,0 +1,19 @@
+[
+    {
+        "name": "Future Skills for Employment",
+        "images": [
+            "https://via.placeholder.com/600x300",
+            "https://via.placeholder.com/600x300?text=Image+2",
+            "https://via.placeholder.com/600x300?text=Image+3"
+        ],
+        "description": "This is a detailed description of the I2I Conference. It will provide insights into the latest trends in the industry and opportunities for networking."
+    },
+    {
+        "name": "Tech Summit 2023",
+        "images": [
+            "https://via.placeholder.com/600x300?text=Tech+1",
+            "https://via.placeholder.com/600x300?text=Tech+2"
+        ],
+        "description": "Tech Summit 2023 brings together leading tech experts to discuss the future of technology."
+    }
+]
