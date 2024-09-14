@@ -57,7 +57,7 @@ const Achievements = () => {
                             {/* Remaining Content */}
                             <div className="md:ml-6 flex flex-col justify-center md:w-3/4">
                                 <h2 className="text-xl font-semibold">{alumni.name}</h2>
-                                <p className="text-gray-600">{alumni.batch}</p>
+                                {alumni.batch && <p className="text-gray-600">{alumni.batch}</p>}
                                 <p className="text-gray-600">{alumni.department}</p>
                                 <p className="text-gray-700 mt-2" dangerouslySetInnerHTML={{ __html: alumni.achievement }} />
                             </div>

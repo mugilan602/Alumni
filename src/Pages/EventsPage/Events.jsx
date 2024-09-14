@@ -8,15 +8,15 @@ function Events() {
     const events = [
         {
             id: 1,
-            image: 'https://via.placeholder.com/300x150',
+            image: '/images/Future skills for employment/image001.png',
             name: 'Future Skills for Employment',
             date: '2020-05-29 to 2020-05-31',
         },
         {
             id: 2,
-            image: 'https://via.placeholder.com/300x150',
-            name: 'Tech Summit 2023',
-            date: '2023-03-15 10:00 AM',
+            image: '/images/Alumni Meet 2018/image011.png',
+            name: 'Alumni Meet 2018',
+            date: '2018-06-16 10:00 AM',
         },
         {
             id: 3,
@@ -44,7 +44,7 @@ function Events() {
             <Navbar2 />
             <Campus />
             {/* Heading for the Alumni Events */}
-            <h1 className="text-center text-3xl font-bold my-8">Sri Sairam Engineering College - Alumni Events</h1>
+            <h1 className="text-center  text-[#005D99] text-3xl font-bold my-8">Sri Sairam Engineering College - Alumni Events</h1>
 
             {/* Event Cards Section */}
             <div className="flex justify-center px-4 ">

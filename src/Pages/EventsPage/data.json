@@ -2,18 +2,31 @@
     {
         "name": "Future Skills for Employment",
         "images": [
-            "https://via.placeholder.com/600x300",
-            "https://via.placeholder.com/600x300?text=Image+2",
-            "https://via.placeholder.com/600x300?text=Image+3"
+            "/images/Future skills for employment/image001.png",
+            "/images/Future skills for employment/image003.png",
+            "/images/Future skills for employment/image006.png",
+            "/images/Future skills for employment/image007.png"
         ],
-        "description": "This is a detailed description of the I2I Conference. It will provide insights into the latest trends in the industry and opportunities for networking."
+        "description": "The Alumni Symposium on Future Skill Development was a highly engaging event that focused on preparing participants for the evolving job market. Alumni and industry experts led insightful sessions on critical skills like AI, data analytics, cybersecurity, and blockchain technology. Attendees gained hands-on experience through workshops and explored how to integrate these future-ready skills into their careers. The event also emphasized the importance of soft skills, such as leadership and adaptability, in the modern workplace. It provided a valuable platform for networking and learning from professionals across various industries."
     },
     {
-        "name": "Tech Summit 2023",
+        "name": "Alumni Meet 2018",
         "images": [
-            "https://via.placeholder.com/600x300?text=Tech+1",
-            "https://via.placeholder.com/600x300?text=Tech+2"
+            "/images/Alumni Meet 2018/image009.png",
+            "/images/Alumni Meet 2018/image011.png",
+            "/images/Alumni Meet 2018/image013.png",
+            "/images/Alumni Meet 2018/image015.png",
+            "/images/Alumni Meet 2018/image017.png",
+            "/images/Alumni Meet 2018/image019.png",
+            "/images/Alumni Meet 2018/image021.png",
+            "/images/Alumni Meet 2018/image023.png",
+            "/images/Alumni Meet 2018/image025.png",
+            "/images/Alumni Meet 2018/image027.png",
+            "/images/Alumni Meet 2018/image029.png",
+            "/images/Alumni Meet 2018/image031.png",
+            "/images/Alumni Meet 2018/image033.png",
+            "/images/Alumni Meet 2018/image035.png"
         ],
-        "description": "Tech Summit 2023 brings together leading tech experts to discuss the future of technology."
+        "description": "The Alumni Meet 2018, held on Saturday, June 16, 2018, was a vibrant gathering of former students reconnecting and celebrating their shared experiences. The event featured networking sessions, panel discussions with distinguished alumni, and a gala dinner. Highlights included engaging entertainment, a campus tour showcasing recent developments, and the presentation of awards to notable alumni. It was a memorable evening, fostering a strong sense of community and camaraderie among graduates."
     }
 ]
