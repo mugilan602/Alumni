@@ -2,7 +2,10 @@ import React from 'react';
 import Navbar2 from '../Navbar/Navbar2';
 import { Campus } from '../Campus/Campus';
 import harivignesh from "./photos/harivignesh.png";
-
+import Bhuvanapriya from "./photos/Bhuvanapriya.png";
+import Sampath from "./photos/Sampath.png";
+import Baradwaj from "./photos/Baradwaj.png";
+import Rajakumar from "./photos/Rajakumar.png";
 const Achievements = () => {
     const alumniList = [
         {
@@ -35,13 +38,40 @@ const Achievements = () => {
             achievement: "Mr Hari Vignesh Iyer, our Alumni of 2012 batch received Unilever project Silver-Category Award for successfully leading the access Management transition of UNILEVER, which sold its spread business in the month of July to the new company",
             photo: harivignesh,
         },
+        {
+            name: 'Ms.Bhuvanapriya Ravindran',
+            batch: 'Batch 2018',
+            department: 'IT DEPARTMENT',
+            achievement: `Ms.Bhuvanapriya Ravindran , Lead Business Analyst(Societe Generale), our Alumni of 2018 batch was honored with Monthly Spot Award for web migration project by BNP Societe Generale Company.`,
+            photo: Bhuvanapriya,
+        },
+        {
+            name: ' Sampath Veeraraghavan ',
+            department: 'CSE DEPARTMENT',
+            achievement: "Senior Technical Program Manager,Amazon, Greater Boston Area, USA and Elected IEEE Eta Kappa Nu 2022 Global President-Elect :2005 ",
+            photo: Sampath,
+        },
+        {
+            name: ' Baradwaj Varadharajan ',
+            department: 'CSE DEPARTMENT',
+            achievement: "  Baradwaj Varadharajan Software Development Engineer Amazon india pvt Ltd 2018 Blogger/YouTuber - androidmonks.com & coder monk YouTube channel.",
+            photo: Baradwaj,
+        },
+        {
+            name: 'Mr. Rajakumar Sampathkumar',
+            department: 'CSE DEPARTMENT',
+            achievement: "  Mr. Rajakumar Sampathkumar Senior Technical Account Manager, Amazon, Greater NewYork City Area, USA 2003 3 PUBLICATIONS - Disruptive Cloud Computing and IT, Vulnerability Management for Cloud Computing - 2014: A Cloud Computing Security Essential ENIAC and ARPANET to Cloud",
+            photo: Rajakumar,
+        },
+
+       
     ];
 
     return (
         <>
             <Navbar2 />
             <Campus />
-            <div className="max-w-4xl mx-auto p-6">
+            <div className="max-w-4xl  mx-auto p-6">
                 <h1 className="text-4xl font-bold text-center mb-8">Alumni Achievements</h1>
                 <div className="space-y-8">
                     {alumniList.map((alumni, index) => (
@@ -50,7 +80,7 @@ const Achievements = () => {
                             className="flex flex-col md:flex-row items-start bg-white shadow-md rounded-lg p-4"
                         >
                             {/* Alumni Photo */}
-                            <div className="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden bg-gray-100">
+                            <div className="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden ">
                                 <img src={alumni.photo} alt={alumni.name} className="w-full h-full object-cover" />
                             </div>
 
