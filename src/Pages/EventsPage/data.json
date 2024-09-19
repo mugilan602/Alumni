@@ -50,5 +50,36 @@
             "/images/Alumni Talk CSE/image087.png"
         ],
         "description": "The Alumni Meet 2018, held on Saturday, June 16, 2018, was a vibrant gathering of former students reconnecting and celebrating their shared experiences. The event featured networking sessions, panel discussions with distinguished alumni, and a gala dinner. Highlights included engaging entertainment, a campus tour showcasing recent developments, and the presentation of awards to notable alumni. It was a memorable evening, fostering a strong sense of community and camaraderie among graduates."
+    },
+    {
+        "name": "Webinar On Service Industry",
+        "images": [
+            "/images/Alumni Talk CSE/image037.png",
+            "/images/Alumni Talk CSE/image040.gif"
+        ],
+        "description": "The Alumni Meet 2018, held on Saturday, June 16, 2018, was a vibrant gathering of former students reconnecting and celebrating their shared experiences. The event featured networking sessions, panel discussions with distinguished alumni, and a gala dinner. Highlights included engaging entertainment, a campus tour showcasing recent developments, and the presentation of awards to notable alumni. It was a memorable evening, fostering a strong sense of community and camaraderie among graduates."
+    },
+    {
+        "name": "Webinar On Cloud Computing",
+        "images": [
+            "/images/Alumni Talk CSE/image042.gif",
+            "/images/Alumni Talk CSE/image044.gif"
+        ],
+        "description": "The Alumni Meet 2018, held on Saturday, June 16, 2018, was a vibrant gathering of former students reconnecting and celebrating their shared experiences. The event featured networking sessions, panel discussions with distinguished alumni, and a gala dinner. Highlights included engaging entertainment, a campus tour showcasing recent developments, and the presentation of awards to notable alumni. It was a memorable evening, fostering a strong sense of community and camaraderie among graduates."
+    },
+    {
+        "name": "Webinar On Devops Engineering",
+        "images": [
+            "/images/Alumni Talk CSE/image046.gif",
+            "/images/Alumni Talk CSE/image048.gif"
+        ],
+        "description": "The Alumni Meet 2018, held on Saturday, June 16, 2018, was a vibrant gathering of former students reconnecting and celebrating their shared experiences. The event featured networking sessions, panel discussions with distinguished alumni, and a gala dinner. Highlights included engaging entertainment, a campus tour showcasing recent developments, and the presentation of awards to notable alumni. It was a memorable evening, fostering a strong sense of community and camaraderie among graduates."
+    },
+    {
+        "name": "Workshop on Mobile App Development",
+        "images": [
+            "/images/Alumni Talk CSE/image082.gif"
+        ],
+        "description": "The Alumni Meet 2018, held on Saturday, June 16, 2018, was a vibrant gathering of former students reconnecting and celebrating their shared experiences. The event featured networking sessions, panel discussions with distinguished alumni, and a gala dinner. Highlights included engaging entertainment, a campus tour showcasing recent developments, and the presentation of awards to notable alumni. It was a memorable evening, fostering a strong sense of community and camaraderie among graduates."
     }
 ]

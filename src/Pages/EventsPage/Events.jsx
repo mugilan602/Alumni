@@ -36,6 +36,30 @@ function Events() {
             name: 'Alumni Talk on Production Management',
             date: '2020-06-12 6:00 PM',
         },
+        {
+            id: 6,
+            image: '/images/Alumni Talk CSE/image037.png',
+            name: 'Webinar On Service Industry',
+            date: '2020-08-29 6:30 PM',
+        },
+        {
+            id: 7,
+            image: '/images/Alumni Talk CSE/image042.gif',
+            name: 'Webinar On Cloud Computing',
+            date: '2020-08-29 6:30 PM',
+        },
+        {
+            id: 8,
+            image: '/images/Alumni Talk CSE/image046.gif',
+            name: 'Webinar On Devops Engineering',
+            date: '2020-08-29 6:30 PM',
+        },
+        {
+            id: 9,
+            image: '/images/Alumni Talk CSE/image082.gif',
+            name: 'Workshop on Mobile App Development',
+            date: '2020-08-29 6:30 PM',
+        }
     ];
 
 
