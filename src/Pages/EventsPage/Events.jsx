@@ -59,6 +59,24 @@ function Events() {
             image: '/images/Alumni Talk CSE/image082.gif',
             name: 'Workshop on Mobile App Development',
             date: '2020-08-29 6:30 PM',
+        },
+        {
+            id: 10,
+            image: '/images/Alumni Talk CSE/image080.gif',
+            name: 'Insights on Google IO',
+            date: '2023-07-05 11:00 AM',
+        },
+        {
+            id: 11,
+            image: '/images/Alumni Talk CSE/image084.gif',
+            name: 'Placement Motivation',
+            date: '2023-08-01 06:30 PM',
+        },
+        {
+            id: 12,
+            image: '/images/Alumni Talk CSE/image085.png',
+            name: 'Webinar on Engineering Education',
+            date: '2020-09-05 05:00 PM',
         }
     ];
 
