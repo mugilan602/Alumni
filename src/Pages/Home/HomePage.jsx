@@ -114,24 +114,34 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Chairman's Message */}
-
-
-      <section className="p-10 bg-white font-poppins">
-        <h1 className="mb-4 text-2xl font-bold tracking-widest text-gray-700 uppercase ">CEO Message</h1>
-        <div className="flex p-6 bg-white rounded-lg shadow-2xl drop-shadow-2xl">
-          <div className="flex-shrink-0 w-1/5 ml-10 mr-10 text-center">
-            <img className="w-full h-auto mt-2" src="https://sairamuba.com/images/home-page-images/ceo.webp" alt="CEO" />
-            <h4 className="mt-4 font-semibold tracking-widest text-gray-900 uppercase">Sri Sai Prakash Leo Muthu</h4>
+      {/* CEO Message */}
+      <section className="p-6 bg-white ">
+        <h1 className="mb-4 text-2xl font-bold tracking-widest text-gray-700 uppercase text-center md:text-left">
+          CEO Message
+        </h1>
+        <div className="flex flex-col md:flex-row items-center p-6 bg-white rounded-lg">
+          <div className="flex-shrink-0 w-full md:w-1/5 text-center mb-6 md:mb-0">
+            <img
+              className="w-40 h-auto mx-auto md:w-full mt-2"
+              src="https://sairamuba.com/images/home-page-images/ceo.webp"
+              alt="CEO"
+            />
+            <h4 className="mt-4 font-semibold tracking-widest text-gray-900 uppercase">
+              Sri Sai Prakash Leo Muthu
+            </h4>
             <p className="font-medium text-gray-700">Chairman & CEO</p>
             <p className="font-medium text-gray-700">Sairam Group of Institutions</p>
           </div>
-          <div className="w-3/5 mt-20 ml-20 font-medium">
-            <p className="font-medium text-justify text-gray-700 font-poppins">
-              Our alumni, who once walked these corridors as students, have soared to great heights, becoming beacons of inspiration in every field imaginable. I am filled with a sense of pride in observing their glorious growth and contribution in their chosen spheres. We connect with immense value for being SAIRAMITES forever. <br /><br />
-              Amongst us, we have luminaries like Dr. Veera Muthuvel, the esteemed director of the Chandrayaan mission, the distinguished individuals who have been serving with distinction as IASs, IPSs, CEOs and acclaimed Entrepreneurs. Their achievements are a testament to their individual brilliance as well as the reflection of the solid foundation our institution has provided.
-            </p>
-            <button onClick={handleOpenModal} className="mt-4 font-medium text-blue-700 hover:text-blue-500">Read More</button>
+          <div className="w-full md:w-4/5 mt-6 md:mt-0 md:ml-10 flex items-center">
+            <div className="font-medium text-center md:text-left">
+              <p className="font-medium text-justify  font-poppins">
+                Our alumni, who once walked these corridors as students, have soared to great heights, becoming beacons of inspiration in every field imaginable. I am filled with a sense of pride in observing their glorious growth and contribution in their chosen spheres. We connect with immense value for being SAIRAMITES forever. <br /><br />
+                Amongst us, we have luminaries like Dr. Veera Muthuvel, the esteemed director of the Chandrayaan mission, the distinguished individuals who have been serving with distinction as IASs, IPSs, CEOs and acclaimed Entrepreneurs. Their achievements are a testament to their individual brilliance as well as the reflection of the solid foundation our institution has provided.
+              </p>
+              <button onClick={handleOpenModal} className="mt-4 font-medium text-blue-700 hover:text-blue-500">
+                Read More
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -139,14 +149,14 @@ function HomePage() {
 
 
       {/* Principal's Message */}
-      <section className="p-10 bg-white font-poppins">
-        <h1 className="mb-4 text-2xl font-bold tracking-widest text-gray-700 uppercase ">
+      <section className="p-6 bg-white font-poppins">
+        <h1 className="mb-4 text-2xl font-bold tracking-widest text-gray-700 uppercase text-center md:text-left">
           Principal's Message:
         </h1>
-        <div className="flex p-6 bg-white rounded-lg shadow-2xl drop-shadow-2xl">
-          <div className="flex-shrink-0 w-1/5 ml-10 text-center">
+        <div className="flex flex-col md:flex-row items-center p-6 bg-white rounded-lg">
+          <div className="flex-shrink-0 w-full md:w-1/5 text-center mb-6 md:mb-0">
             <img
-              className="w-full h-auto mt-2"
+              className="w-40 h-auto mx-auto md:w-full mt-2"
               src="https://sairamuba.com/images/home-page-images/new-principal.webp"
               alt="Principal"
             />
@@ -156,22 +166,24 @@ function HomePage() {
             <p className="font-medium text-gray-700">Principal</p>
             <p className="font-medium text-gray-700">Sairam Engineering College</p>
           </div>
-          <div className="w-3/5 mt-10 ml-20 font-medium text-gray-700">
-            <p className="text-justify">
-              It gives us immense pleasure to observe that SAIRAM ALUMNI FRATERNITY, who emerged from
-              the hallowed halls of our esteemed institution, is gathering to rejoice and share at the same
-              campus on 18th November 2023.
-              <br /><br />
-              Our alumni, the pride of Sri Sairam Engineering College, have etched their names in the annals of
-              success across various domains. Their journeys from these classrooms to the zenith of their
-              careers exemplify the caliber of education and values imparted here.
-              <br /><br />
-              We take immense pleasure in our alumni whose contributions from their specific roles and as
-              individuals have inspired not only our nation but also the global community.
-            </p>
-            <button onClick={handleOpenPrincipalModal} className="mt-4 text-blue-700 hover:text-blue-500">
-              Read More
-            </button>
+          <div className="w-full md:w-4/5 mt-6 md:mt-0 md:ml-10 flex items-center">
+            <div className="font-medium text-gray-700 text-center md:text-left">
+              <p className="text-justify">
+                It gives us immense pleasure to observe that SAIRAM ALUMNI FRATERNITY, who emerged from
+                the hallowed halls of our esteemed institution, is gathering to rejoice and share at the same
+                campus on 18th November 2023.
+                <br /><br />
+                Our alumni, the pride of Sri Sairam Engineering College, have etched their names in the annals of
+                success across various domains. Their journeys from these classrooms to the zenith of their
+                careers exemplify the caliber of education and values imparted here.
+                <br /><br />
+                We take immense pleasure in our alumni whose contributions from their specific roles and as
+                individuals have inspired not only our nation but also the global community.
+              </p>
+              <button onClick={handleOpenPrincipalModal} className="mt-4 text-blue-700 hover:text-blue-500">
+                Read More
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -192,7 +204,7 @@ function HomePage() {
       <section className="p-10 text-gray-700 bg-white font-poppins">
         <div className="flex gap-5">
           {/* About Sairam Alumni Association Card */}
-          <div className="w-[70%] bg-white shadow-2xl rounded-lg p-6 drop-shadow-2xl">
+          <div className="w-[70%] bg-white rounded-lg p-6 ">
             <h1 className="mb-4 text-2xl tracking-widest uppercase underline-offset-8">About Sairam Alumni Association</h1>
             <p className="mt-5 text-justify">
               The Alumni Association of Sairam Engineering College is proudly managed by a dedicated Alumni Committee. The association plays a pivotal role in fostering strong relationships among alumni, faculty, and the college administration. Beyond supporting our alumni in various ways, the association actively contributes to the college's pursuit of its goals, vision, and mission. <br /> <br />
@@ -201,7 +213,7 @@ function HomePage() {
           </div>
 
           {/* Events Card */}
-          <div className="w-[30%] bg-white shadow-2xl rounded-lg p-6 drop-shadow-2xl">
+          <div className="w-[30%] bg-white  rounded-lg p-6 ">
             <h1 className="mb-4 text-2xl tracking-widest uppercase underline-offset-8">Events</h1>
             <ul className="mt-5 space-y-4">
               <li>
