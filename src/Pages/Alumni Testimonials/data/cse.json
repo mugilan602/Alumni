@@ -5,7 +5,9 @@
         "company": "Nextlabs Inc",
         "batch": "2004-08",
         "department": "CSE",
-        "testimonial": "I'm deeply thankful to the Lab Assistants, Lecturers, and Professors at Sri Sairam Engineering College. Their guidance in Computer Science led me to a master's at the National University of Singapore, specializing in data security. Their mentorship boosted my skills, including lab work, programming, and innovation. This solid foundation nurtured soft skills and enabled success in the industry. Engaging in telemedicine projects and integrating medical devices with web technologies was a highlight. This academic exposure set me on a path to excel in data security and become a skilled software engineer."
+        "testimonial": "I'm deeply thankful to the Lab Assistants, Lecturers, and Professors at Sri Sairam Engineering College. Their guidance in Computer Science led me to a master's at the National University of Singapore, specializing in data security. Their mentorship boosted my skills, including lab work, programming, and innovation. This solid foundation nurtured soft skills and enabled success in the industry. Engaging in telemedicine projects and integrating medical devices with web technologies was a highlight. This academic exposure set me on a path to excel in data security and become a skilled software engineer.",
+         "photo": "/Alumni/CSE/NEHRUSADESHKUMAR.jpg"
+
     },
     {
         "name": "Dr. Sathya Chandran",
@@ -13,7 +15,9 @@
         "company": "Netflix, U.S.A",
         "batch": "2005-2009",
         "department": "CSE",
-        "testimonial": "As a proud alumni of Sairam, I can confidently say the professors and the environment provided me with a solid foundation to nurture and grow myself both personally and professionally. I am thankful for the academic freedom provided by the institution and in particular the CSE department. Due to that freedom I was always able to pursue creative projects along with the curricular needs. The institution and the department also encourage participation in inter-collegiate events that greatly helped me build confidence in myself and also build my social skills via interaction with fellow students from other institutions. I will always cherish my four years at Sairam for the rest of my life."
+        "testimonial": "As a proud alumni of Sairam, I can confidently say the professors and the environment provided me with a solid foundation to nurture and grow myself both personally and professionally. I am thankful for the academic freedom provided by the institution and in particular the CSE department. Due to that freedom I was always able to pursue creative projects along with the curricular needs. The institution and the department also encourage participation in inter-collegiate events that greatly helped me build confidence in myself and also build my social skills via interaction with fellow students from other institutions. I will always cherish my four years at Sairam for the rest of my life.",
+        "photo": "/Alumni/CSE/DRSATHYACHANDRAN.jpg"
+
     },
     {
         "name": "Suganya M",
@@ -21,7 +25,9 @@
         "company": "HCL Technologies",
         "batch": "2016-2018",
         "department": "CSE",
-        "testimonial": "Sairam Institution's holistic approach to education extended beyond academics. I graduated from Sairam Institution and it was a transformative experience. The faculty's dedication to excellence and industry-relevant curriculum equipped me with the skills needed to excel in my career. The well-maintained facilities and modern infrastructure provided an excellent learning environment. The institution's emphasis on practical learning through internships and projects was invaluable. I am grateful for the opportunities and support that Sairam provided, which laid the foundation for my success in the professional world. Moreover, the strong alumni network offered valuable connections and mentorship opportunities. The institution's commitment to ethical values and social responsibility left a lasting impression on me. Overall, my time at Sairam was not just about gaining knowledge, but also about personal growth, lifelong learning, and a sense of belonging to a community dedicated to excellence."
+        "testimonial": "Sairam Institution's holistic approach to education extended beyond academics. I graduated from Sairam Institution and it was a transformative experience. The faculty's dedication to excellence and industry-relevant curriculum equipped me with the skills needed to excel in my career. The well-maintained facilities and modern infrastructure provided an excellent learning environment. The institution's emphasis on practical learning through internships and projects was invaluable. I am grateful for the opportunities and support that Sairam provided, which laid the foundation for my success in the professional world. Moreover, the strong alumni network offered valuable connections and mentorship opportunities. The institution's commitment to ethical values and social responsibility left a lasting impression on me. Overall, my time at Sairam was not just about gaining knowledge, but also about personal growth, lifelong learning, and a sense of belonging to a community dedicated to excellence.",
+        "photo": "/Alumni/CSE/SUGANYAM.jpg"
+
     },
     {
         "name": "Deepcharran N",
@@ -29,7 +35,9 @@
         "company": "CISCO",
         "batch": "2017-2021",
         "department": "CSE",
-        "testimonial": "Sairam College provided me with an exceptional educational experience that laid the foundation for my successful career. The dedicated faculty and state-of-the-art facilities were instrumental in shaping my knowledge and skills. I am grateful for the holistic development I received at Sairam, which has greatly contributed to my achievements in the professional world."
+        "testimonial": "Sairam College provided me with an exceptional educational experience that laid the foundation for my successful career. The dedicated faculty and state-of-the-art facilities were instrumental in shaping my knowledge and skills. I am grateful for the holistic development I received at Sairam, which has greatly contributed to my achievements in the professional world.",
+        "photo": "/Alumni/CSE/DEEPCHARRANN.jpg"
+
     },
     {
         "name": "Bhagath Gopinath",
@@ -37,6 +45,9 @@
         "company": "TCS",
         "batch": "2020-2022",
         "department": "CSE",
-        "testimonial": "It's a great opportunity for me that I studied M.E Computer Science Engineering in the year 2020-2022 during COVID. It has good infrastructure such as labs, library, auditorium etc. The Staffs and Management in this College are supportive and providing ample opportunities related to Career. I liked the curriculum especially the Innovative Project work in all Semesters which gave an opportunity to do projects on my own in all Semesters and published two Technical papers in IEEE Xplore journal. This became an added value to my profile. I would like to thank Sai Ram Engineering College for providing great opportunities for Students and I am also very eager to support and guide them whenever required."
+        "testimonial": "It's a great opportunity for me that I studied M.E Computer Science Engineering in the year 2020-2022 during COVID. It has good infrastructure such as labs, library, auditorium etc. The Staffs and Management in this College are supportive and providing ample opportunities related to Career. I liked the curriculum especially the Innovative Project work in all Semesters which gave an opportunity to do projects on my own in all Semesters and published two Technical papers in IEEE Xplore journal. This became an added value to my profile. I would like to thank Sai Ram Engineering College for providing great opportunities for Students and I am also very eager to support and guide them whenever required.",
+        "photo": "/Alumni/CSE/BHAGATHGOPINATH.jpg"
+
+
     }
 ]
