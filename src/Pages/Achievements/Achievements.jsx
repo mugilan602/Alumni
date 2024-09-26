@@ -6,6 +6,7 @@ import Bhuvanapriya from "./photos/Bhuvanapriya.png";
 import Sampath from "./photos/Sampath.png";
 import Baradwaj from "./photos/Baradwaj.png";
 import Rajakumar from "./photos/Rajakumar.png";
+
 const Achievements = () => {
     const alumniList = [
         {
@@ -22,7 +23,6 @@ const Achievements = () => {
             achievement: "Flight Lieutenant S.S. Mythraye (2012 batch) was honored to lead the Guard of Honor during the inspection of the  Vadsar base by Air Marshal H.S. Arora, AOC-in-C SWAC. Air Marshal Arora shared his experience as Air Defence Commander and DG Air Ops, praising the base’s operational readiness.",
             photo: 'https://ece.sairam.edu.in/wp-content/uploads/sites/4/2023/09/alumni20192.png',
         },
-
         {
             name: 'Hari Vignesh',
             batch: 'Batch 2012',
@@ -38,21 +38,21 @@ const Achievements = () => {
             photo: Bhuvanapriya,
         },
         {
-            name: ' Sampath Veeraraghavan ',
+            name: 'Sampath Veeraraghavan',
             department: 'CSE DEPARTMENT',
-            achievement: "Senior Technical Program Manager,Amazon, Greater Boston Area, USA and Elected IEEE Eta Kappa Nu 2022 Global President-Elect :2005 ",
+            achievement: "Senior Technical Program Manager, Amazon, Greater Boston Area, USA and Elected IEEE Eta Kappa Nu 2022 Global President-Elect :2005 ",
             photo: Sampath,
         },
         {
-            name: ' Baradwaj Varadharajan ',
+            name: 'Baradwaj Varadharajan',
             department: 'CSE DEPARTMENT',
-            achievement: "  Baradwaj Varadharajan Software Development Engineer Amazon india pvt Ltd 2018 Blogger/YouTuber - androidmonks.com & coder monk YouTube channel.",
+            achievement: "Baradwaj Varadharajan Software Development Engineer Amazon india pvt Ltd 2018 Blogger/YouTuber - androidmonks.com & coder monk YouTube channel.",
             photo: Baradwaj,
         },
         {
             name: 'Mr. Rajakumar Sampathkumar',
             department: 'CSE DEPARTMENT',
-            achievement: "  Mr. Rajakumar Sampathkumar Senior Technical Account Manager, Amazon, Greater NewYork City Area, USA 2003 3 PUBLICATIONS - Disruptive Cloud Computing and IT, Vulnerability Management for Cloud Computing - 2014: A Cloud Computing Security Essential ENIAC and ARPANET to Cloud",
+            achievement: "Mr. Rajakumar Sampathkumar Senior Technical Account Manager, Amazon, Greater NewYork City Area, USA 2003 3 PUBLICATIONS - Disruptive Cloud Computing and IT, Vulnerability Management for Cloud Computing - 2014: A Cloud Computing Security Essential ENIAC and ARPANET to Cloud",
             photo: Rajakumar,
         },
         {
@@ -64,35 +64,36 @@ const Achievements = () => {
             Munich, Germany`,
             photo: "https://eee.sairam.edu.in/wp-content/uploads/sites/5/2023/09/alumini-distinguished-sairam.png",
         },
-
     ];
 
     return (
         <>
-            <Navbar2 />
-            <Campus />
-            <div className="max-w-4xl  mx-auto p-6">
-                <h1 className="text-4xl font-bold text-center mb-8">Alumni Achievements</h1>
-                <div className="space-y-8">
-                    {alumniList.map((alumni, index) => (
-                        <div
-                            key={index}
-                            className="flex flex-col md:flex-row items-start bg-white shadow-md rounded-lg p-4"
-                        >
-                            {/* Alumni Photo */}
-                            <div className="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden ">
-                                <img src={alumni.photo} alt={alumni.name} className="w-full h-full object-cover" />
-                            </div>
+            <div style={{ backgroundColor: 'white', minHeight: '100vh' }}>
+                <Navbar2 />
+                <Campus />
+                <div className="max-w-4xl mx-auto p-6">
+                    <h1 className="text-4xl font-bold text-center mb-8 text-black">Alumni Achievements</h1>
+                    <div className="space-y-8">
+                        {alumniList.map((alumni, index) => (
+                            <div
+                                key={index}
+                                className="flex flex-col md:flex-row items-start bg-white shadow-md rounded-lg p-4"
+                            >
+                                {/* Alumni Photo */}
+                                <div className="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden">
+                                    <img src={alumni.photo} alt={alumni.name} className="w-full h-full object-cover" />
+                                </div>
 
-                            {/* Remaining Content */}
-                            <div className="md:ml-6 flex flex-col justify-center md:w-3/4">
-                                <h2 className="text-xl font-semibold">{alumni.name}</h2>
-                                {alumni.batch && <p className="text-gray-600">{alumni.batch}</p>}
-                                <p className="text-gray-600">{alumni.department}</p>
-                                <p className="text-gray-700 mt-2" dangerouslySetInnerHTML={{ __html: alumni.achievement }} />
+                                {/* Remaining Content */}
+                                <div className="md:ml-6 flex flex-col justify-center md:w-3/4">
+                                    <h2 className="text-black text-xl font-semibold">{alumni.name}</h2>
+                                    {alumni.batch && <p className="text-gray-600">{alumni.batch}</p>}
+                                    <p className="text-gray-600">{alumni.department}</p>
+                                    <p className="text-gray-700 mt-2" dangerouslySetInnerHTML={{ __html: alumni.achievement }} />
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </div>
         </>

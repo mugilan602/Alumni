@@ -8,7 +8,7 @@ import { Campus } from "../Campus/Campus.jsx";
 
 const EventsCard = ({ img }) => {
   return (
-    <div className="shadow-lg m-4 p-6">
+    <div className="shadow-lg m-4 p-6 bg-white"> {/* Ensuring card has white background */}
       <img
         src={img}
         alt="product"
@@ -20,9 +20,9 @@ const EventsCard = ({ img }) => {
 
 const EventsLayout = () => {
   return (
-    <div className="2xl:container bg-white">
-      <div className=" m-5 p-6">
-        <div className="w-[100%] grid grid-cols-1 space-y-3">
+    <div className="2xl:container bg-white"> {/* Changed container background to white */}
+      <div className="m-5 p-6 bg-white"> {/* Ensured this section has a white background */}
+        <div className="w-[100%] grid grid-cols-1 space-y-3 bg-white">
           <h1 className="w-[100%] mx-auto bg-white font-semibold text-[#0c6cb1] text-xl m-3 p-4">
             EVENTS
           </h1>
@@ -44,16 +44,14 @@ const EventsLayout = () => {
           {EventDataset.map((e) => (
             <SwiperSlide key={e.team_id}>
               <EventsCard img={e.image_url} />
-              <div className="font-semibold m-6 text-base lg:text-xl">
-                <p>
-                  {e.para}
-                </p>
+              <div className="font-semibold m-6 text-base lg:text-xl bg-white">
+                <p>{e.para}</p>
               </div>
               <div className="flex space-x-7 m-6">
                 <a href="#">
                   <button
-                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
-                    style={{ borderRadius: "20px" }} // Adjust the value to make the button more oval
+                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline "
+                    style={{ borderRadius: "20px" }}
                   >
                     Event Date
                   </button>
@@ -61,7 +59,7 @@ const EventsLayout = () => {
                 <a href={e.href}>
                   <button
                     className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
-                    style={{ borderRadius: "20px" }} // Adjust the value to make the button more oval
+                    style={{ borderRadius: "20px" }}
                   >
                     Explore
                   </button>
@@ -78,9 +76,11 @@ const EventsLayout = () => {
 const EventsPageLayout = () => {
   return (
     <>
-      <Navbar2 />
-      <Campus />
-      <EventsLayout />
+      <div className="bg-white"> {/* Entire page wrapper has white background */}
+        <Navbar2 /> {/* Assuming this navbar component has a white background */}
+        <Campus /> {/* Assuming Campus component has no conflicting background */}
+        <EventsLayout />
+      </div>
     </>
   );
 };
