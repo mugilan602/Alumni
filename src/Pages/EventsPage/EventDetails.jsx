@@ -24,7 +24,7 @@ const EventDetails = () => {
 
     return (
         <>
-            <div className='bg-black'>
+            <div className='bg-white'>
                 <Navbar2 />
                 <Campus />
                 <div className="container mx-auto p-6">
