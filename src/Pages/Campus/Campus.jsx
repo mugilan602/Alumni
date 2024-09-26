@@ -4,7 +4,7 @@ import {Campus_Image} from "../../assets/image";
 export const Campus = () => {
   return (
    <>
-   <div className='2xl:container pb-5'>
+   <div className='2xl:container pb-5 bg-white'>
    <img className='w-[100%]' src={Campus_Image} alt="campus_image" />
 
    </div>

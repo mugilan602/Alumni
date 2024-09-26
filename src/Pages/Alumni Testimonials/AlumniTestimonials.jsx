@@ -50,46 +50,49 @@ const AlumniTestimonials = () => {
         <>
             <Navbar2 />
             <Campus />
-            <div className="container mx-auto px-4 py-8 min-h-screen flex items-center flex-col justify-center">
-                <div className="w-full max-w-md mb-8">
-                    <label htmlFor="department" className="block text-lg font-semibold mb-2">Select Department:</label>
-                    <select
-                        id="department"
-                        value={selectedDepartment}
-                        onChange={handleDepartmentChange}
-                        className="block w-full border border-gray-300 rounded-md p-2"
-                    >
-                        {departments.map(dept => (
-                            <option key={dept} value={dept}>{dept}</option>
-                        ))}
-                    </select>
-                </div>
-                <div className="space-y-8 w-[85%]">
-                    {alumni.map((alum, index) => (
-                        <div
-                            key={index}
-                            className="bg-white rounded-lg shadow-md p-6 flex flex-col lg:flex-row items-center justify-center lg:items-center"
+            <div className="bg-white min-h-screen">
+                <div className="container mx-auto px-4 py-8 min-h-screen flex items-center flex-col justify-center bg-white">
+                    <div className="w-full max-w-md mb-8">
+                        <label htmlFor="department" className="block text-lg font-semibold mb-2 text-blue-900">
+                            Select Department:
+                        </label>
+                        <select
+                            id="department"
+                            value={selectedDepartment}
+                            onChange={handleDepartmentChange}
+                            className="block w-full border border-gray-300 rounded-md p-2"
                         >
-                            {/* Left Section: Image and Alumni Info */}
-                            <div className="flex-shrink-0 lg:w-1/3 text-center lg:text-left">
-                                {/* Add a placeholder image if `alum.photo` is not available */}
-                                <img
-                                    src={alum.photo || 'path/to/placeholder/image.jpg'}
-                                    alt={alum.name}
-                                    className="w-32 h-32 lg:w-32 lg:h-32 rounded-full object-cover mb-4 lg:mb-0 mx-auto lg:mx-0"
-                                />
-                                <h2 className="text-xl font-semibold mt-4">{alum.name}</h2>
-                                <p className="text-gray-600">{alum.designation} at {alum.company}</p>
-                                {alum.batch && <p className="text-gray-500">Batch of {alum.batch}</p>}
-                                <p className="text-gray-500">Department of {alum.department}</p> {/* Display department */}
-                            </div>
+                            {departments.map(dept => (
+                                <option key={dept} value={dept}>{dept}</option>
+                            ))}
+                        </select>
+                    </div>
+                    <div className="space-y-8 w-[85%]">
+                        {alumni.map((alum, index) => (
+                            <div
+                                key={index}
+                                className="bg-white rounded-lg shadow-md p-6 flex flex-col lg:flex-row items-center justify-center lg:items-center"
+                            >
+                                {/* Left Section: Image and Alumni Info */}
+                                <div className="flex-shrink-0 lg:w-1/3 text-center lg:text-left">
+                                    <img
+                                        src={alum.photo || 'path/to/placeholder/image.jpg'}
+                                        alt={alum.name}
+                                        className="w-32 h-32 lg:w-32 lg:h-32 rounded-full object-cover mb-4 lg:mb-0 mx-auto lg:mx-0"
+                                    />
+                                    <h2 className="text-xl font-semibold mt-4 text-black">{alum.name}</h2>
+                                    <p className="text-gray-600">{alum.designation} at {alum.company}</p>
+                                    {alum.batch && <p className="text-gray-500">Batch of {alum.batch}</p>}
+                                    <p className="text-gray-500">Department of {alum.department}</p>
+                                </div>
 
-                            {/* Right Section: Testimonial */}
-                            <div className="lg:w-2/3 lg:pl-8 flex items-center justify-center lg:justify-start">
-                                <p className="text-gray-700 italic text-center lg:text-left">"{alum.testimonial}"</p>
+                                {/* Right Section: Testimonial */}
+                                <div className="lg:w-2/3 lg:pl-8 flex items-center justify-center lg:justify-start">
+                                    <p className="text-gray-700 italic text-center lg:text-left">"{alum.testimonial}"</p>
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </div>
         </>

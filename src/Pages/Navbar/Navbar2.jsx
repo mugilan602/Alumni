@@ -9,8 +9,8 @@ const Navbar2 = () => {
   };
 
   return (
-    <div className="2xl:container h-[10vh]  bg-[#005D99]">
-      <div className="w-[90%] mx-auto grid grid-cols-1 h-[100%] ">
+    <div className="2xl:container h-[10vh]  bg-[#005D99] ">
+      <div className="w-[90%] mx-auto grid grid-cols-1 h-[100%]  ">
         <div className="flex justify-end items-center w-[100%] h-[100%]">
           <div className="">
             {/* Menu Toggle Icon */}

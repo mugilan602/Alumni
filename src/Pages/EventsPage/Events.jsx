@@ -83,14 +83,16 @@ function Events() {
 
     return (
         <>
+        <div className="bg-white">
             <Navbar2 />
             <Campus />
             {/* Heading for the Alumni Events */}
-            <h1 className="text-center  text-[#005D99] text-3xl font-bold my-8">Sri Sairam Engineering College - Alumni Events</h1>
+            
+            <h1 className="text-center  text-[#005D99] text-3xl font-bold my-8 bg-white">Sri Sairam Engineering College - Alumni Events</h1>
 
             {/* Event Cards Section */}
-            <div className="flex justify-center px-4 ">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 ">
+            <div className="flex justify-center px-4 bg-white ">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 bg-white ">
                     {events.map((event, index) => (
                         <EventCard
                             key={index}
@@ -101,6 +103,7 @@ function Events() {
                         />
                     ))}
                 </div>
+            </div>
             </div>
         </>
     );

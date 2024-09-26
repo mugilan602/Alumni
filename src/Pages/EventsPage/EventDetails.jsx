@@ -19,21 +19,21 @@ const EventDetails = () => {
     }, [name]);
 
     if (!event) {
-        return <div className="flex justify-center items-center min-h-screen">Loading...</div>;
+        return <div className="flex justify-center items-center min-h-screen ">Loading...</div>;
     }
 
     return (
         <>
             <Navbar2 />
             <Campus />
-            <div className="container mx-auto p-6">
+            <div className="container mx-auto p-6 ">
                 {/* Event Name Heading */}
                 <h1 className="text-3xl sm:text-4xl font-bold mb-4 text-center underline text-[#005D99] p-4 rounded-md">
                     {event.name}
                 </h1>
 
                 {/* Carousel Section */}
-                <div className="relative w-full max-w-xl mx-auto">
+                <div className="relative w-full max-w-xl mx-auto ">
                     <Carousel
                         autoPlay
                         interval={3000}
@@ -59,7 +59,7 @@ const EventDetails = () => {
                 </div>
 
                 {/* Description Heading */}
-                <div className='flex justify-center'>
+                <div className='flex justify-center '>
                     <div className="mt-6  text-center w-[90%] sm:text-left">
                         <h2 className="text-2xl sm:text-3xl font-semibold mb-4  text-[#005D99]  rounded-md">
                             Description
