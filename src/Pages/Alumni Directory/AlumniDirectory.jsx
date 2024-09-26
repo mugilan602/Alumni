@@ -24,55 +24,50 @@ const AlumniDirectory = () => {
         linkedIn: "https://www.linkedin.com/in/sachin-rengarajan-93a6304b/"
       },
       {
-        "firstName": "Annapurani",
-        "position": "Systems Engineer",
-        "companyName": "TCS",
-        "department": "EIE",
-        "batch": "2010-2014",
-        "profileImage": "https://militaryhealthinstitute.org/wp-content/uploads/sites/37/2021/08/blank-profile-picture-png.png",
+        firstName: "Annapurani",
+        position: "Systems Engineer",
+        companyName: "TCS",
+        department: "EIE",
+        batch: "2010-2014",
+        profileImage: "https://militaryhealthinstitute.org/wp-content/uploads/sites/37/2021/08/blank-profile-picture-png.png",
+        linkedIn: "https://linkedin.com/in/johndoe"
+      },
+      {
+        firstName: "Poovarasan Raja",
+        position: "Manufacturing Engineer",
+        companyName: "Tesla",
+        department: "Mech",
+        batch: "2017",
+        profileImage: "https://militaryhealthinstitute.org/wp-content/uploads/sites/37/2021/08/blank-profile-picture-png.png",
+        linkedIn: "https://www.linkedin.com/in/poovarasan-raja/"
+      },
+      {
+        firstName: "Raveendran SK",
+        position: "Sr. Manager",
+        companyName: "Etisalat Telecommunication",
+        department: "MBA",
+        batch: "2000",
+        profileImage: "https://militaryhealthinstitute.org/wp-content/uploads/sites/37/2021/08/blank-profile-picture-png.png",
+        linkedIn: "https://linkedin.com/in/johndoe"
+      },
+      {
+        firstName: "Kamakshi MuthuKrishnan",
+        position: "ML Automation Engineer",
+        companyName: "Cognizant",
+        department: "ICE",
+        batch: "2005-2009",
+        profileImage: "https://militaryhealthinstitute.org/wp-content/uploads/sites/37/2021/08/blank-profile-picture-png.png",
+        linkedIn: "https://linkedin.com/in/johndoe"
+      },
+      {
+        firstName: "A Karthik",
+        position: "Senior UI Developer",
+        companyName: "EdgeVerve Pvt Ltd",
+        department: "ECE",
+        batch: "2014-2018",
+        profileImage: "https://militaryhealthinstitute.org/wp-content/uploads/sites/37/2021/08/blank-profile-picture-png.png",
         linkedIn: "https://linkedin.com/in/johndoe"
       }
-      ,
-      {
-        "firstName": "Poovarasan Raja",
-        "position": "Manufacturing Engineer",
-        "companyName": "Tesla",
-        "department": "Mech",
-        "batch": "2017",
-        "profileImage": "https://militaryhealthinstitute.org/wp-content/uploads/sites/37/2021/08/blank-profile-picture-png.png",
-        "linkedIn": "https://www.linkedin.com/in/poovarasan-raja/"
-      }
-      ,
-      {
-        "firstName": "Raveendran SK",
-        "position": "Sr. Manager",
-        "companyName": "Etisalat Telecommunication",
-        "department": "MBA",
-        "batch": "2000",
-        "profileImage": "https://militaryhealthinstitute.org/wp-content/uploads/sites/37/2021/08/blank-profile-picture-png.png",
-        "linkedIn": "https://linkedin.com/in/johndoe"
-      }
-      ,
-      {
-        "firstName": "Kamakshi MuthuKrishnan",
-        "position": "ML Automation Engineer",
-        "companyName": "Cognizant",
-        "department": "ICE",
-        "batch": "2005-2009",
-        "profileImage": "https://militaryhealthinstitute.org/wp-content/uploads/sites/37/2021/08/blank-profile-picture-png.png",
-        "linkedIn": "https://linkedin.com/in/johndoe"
-      }
-      ,
-      {
-        "firstName": "A Karthik",
-        "position": "Senior UI Developer",
-        "companyName": "EdgeVerve Pvt Ltd",
-        "department": "ECE",
-        "batch": "2014-2018",
-        "profileImage": "https://militaryhealthinstitute.org/wp-content/uploads/sites/37/2021/08/blank-profile-picture-png.png",
-        "linkedIn": "https://linkedin.com/in/johndoe"
-      }
-
     ]);
   }, []);
 
@@ -108,11 +103,11 @@ const AlumniDirectory = () => {
   ];
 
   return (
-    <>
+    <div className="bg-white min-h-screen"> {/* Ensure entire background is white */}
       <Navbar2 />
       <Campus />
 
-      <div className="relative flex justify-center">
+      <div className="relative flex justify-center ">
         <button
           id="dropdownDelayButton"
           onMouseEnter={openDropdown}
@@ -167,21 +162,21 @@ const AlumniDirectory = () => {
       </div>
 
       {loading ? (
-        <div className="flex justify-center mt-4">
+        <div className="flex justify-center mt-4 bg-white">
           <p>Loading...</p>
         </div>
       ) : error ? (
-        <div className="flex justify-center mt-4">
+        <div className="flex justify-center mt-4 bg-white">
           <p>Error: {error.message}</p>
         </div>
       ) : (
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-center bg-white">
           {alumniData.map((alumni, index) => (
             <AlumniCard key={index} alumni={alumni} />
           ))}
         </div>
       )}
-    </>
+    </div>
   );
 };
 

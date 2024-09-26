@@ -36,9 +36,10 @@ const Jobs = () => {
 
   return (
     <>
+    <div className="bg-white">
       <Navbar2 />
       <Campus />
-      <div className="lg:w-[85%] sm:w-[85%] container mx-auto px-4">
+      <div className="lg:w-[85%] sm:w-[85%] container mx-auto px-4 bg-white">
         <div className="flex flex-col items-center mt-4">
           <a
             href="/create-job"
@@ -69,6 +70,7 @@ const Jobs = () => {
             ))}
           </div>
         </div>
+      </div>
       </div>
     </>
   );

@@ -7,9 +7,11 @@ import { Campus } from '../Campus/Campus';
 const AboutUs = () => {
   return (
     <>
+    <div className="bg-white">
       <Navbar2 />
       <Campus />
       <VisionMission />
+      </div>
     </>
   );
 };
