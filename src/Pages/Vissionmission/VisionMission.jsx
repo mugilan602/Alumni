@@ -31,9 +31,9 @@ function VisionMission() {
             </ul>
 
             <h2 className={styles.vmHeading}>ALUMNI NETWORK</h2>
-            <p className={styles.vmParagraph}>
+            {/* <p className={styles.vmParagraph}>
               We endeavor to create a strong network of alumni that can be navigated for mutual benefits.
-            </p>
+            </p> */}
 
             <h3 className={styles.vmSubheading}>Alumni Meet</h3>
             <ul className={styles.vmList}>
@@ -57,9 +57,9 @@ function VisionMission() {
             </p>
 
             <h2 className={styles.vmHeading}>ALUMNI CONTRIBUTION</h2>
-            <p className={styles.vmParagraph}>
+            {/* <p className={styles.vmParagraph}>
               Engage in sharing your experience, knowledge, and the paths taken after graduation with fellow alumni as they too do the same.
-            </p>
+            </p> */}
 
             <h3 className={styles.vmSubheading}>Knowledge Sharing</h3>
             <p className={styles.vmParagraph}>

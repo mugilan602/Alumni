@@ -16,10 +16,10 @@ const MemberCard = ({ img }) => {
 
 const MemberLayout = () => {
     return (
-        <div className='2xl:container bg-white'>
+        <div className='2xl:container bg-gray-100'>
             <div className='shadow-lg pt-6 p-6'>
                 <div className="w-[100%] grid grid-cols-1 space-y-3">
-                    <h1 className='w-[100%] mx-auto bg-white font-semibold text-[#0c6cb1] text-xl m-3 p-4 shadow-xl'>NOTABLE ALUMNI</h1>
+                    <h1 className='w-[100%] mx-auto bg-gray-100 font-semibold text-[#0c6cb1] text-xl m-3 p-4 '>NOTABLE ALUMNI</h1>
                 </div>
                 <Swiper
                     slidesPerView={5}

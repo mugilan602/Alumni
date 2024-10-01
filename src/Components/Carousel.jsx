@@ -3,6 +3,8 @@ import "./Carousel.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 const Carousel = () => {
   const sliderRef = useRef(null);
@@ -49,12 +51,15 @@ const Carousel = () => {
           />
         </div>
       </Slider>
-      <button className="carousel-button prev" onClick={previous}>
-        Previous
-      </button>
-      <button className="carousel-button next" onClick={next}>
-        Next
-      </button>
+
+      <div className="carousel-buttons">
+        <button className="carousel-button prev" onClick={previous}>
+          <FontAwesomeIcon icon={faChevronLeft} />
+        </button>
+        <button className="carousel-button next" onClick={next}>
+          <FontAwesomeIcon icon={faChevronRight} />
+        </button>
+      </div>
     </div>
   );
 };
