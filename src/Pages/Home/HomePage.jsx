@@ -5,7 +5,6 @@ import Navbar2 from "../Navbar/Navbar2";
 import Carousel from "../../Components/Carousel";
 import CustomModal from "../../Components/Modal";
 import NotableMembers from "../Notable Members/NotableMembers";
-import home from '../../assets/home.jpg';
 import HeroCard from "../../Components/HeroCard";
 function HomePage() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -22,30 +21,35 @@ function HomePage() {
       image: '/images/Future skills for employment/image001.png',
       name: 'Future Skills for Employment',
       date: '2020-05-29 to 2020-05-31',
+      href: "event/Future%20Skills%20for%20Employment"
     },
     {
       id: 2,
       image: '/images/Alumni Meet 2018/image011.png',
       name: 'Alumni Meet 2018',
       date: '2018-06-16 10:00 AM',
+      href: "event/Alumni%20Meet%202018"
     },
     {
       id: 3,
       image: '/images/Alumni Talk CSE/image070.gif',
       name: 'Career and Academic Opportunities',
       date: '2020-10-17 12:00 PM',
+      href: "event/Career%20and%20Academic%20Opportunities"
     },
     {
       id: 4,
       image: '/images/Alumni Talk CSE/image072.jpg',
       name: 'Optimization With Linear Programming',
       date: '2022-05-23 10:00 AM',
+      href: "event/Optimization%20With%20Linear%20Programming"
     },
     {
       id: 5,
       image: '/images/Alumni Talk CSE/image087.png',
       name: 'Alumni Talk on Production Management',
       date: '2020-06-12 6:00 PM',
+      href: "event/Alumni%20Talk%20on%20Production%20Management"
     },
     // {
     //   id: 6,
@@ -154,15 +158,15 @@ function HomePage() {
             {/* Carousel full width on mobile */}
             <Carousel />
           </div>
-          <div className={`${styles.right} bg-gray-100 mt-5 md:mt-0 md:block md:h-full hidden w-1/4 flex-grow`}>
-            <div className="flex flex-col items-center bg-white shadow-lg rounded-lg overflow-hidden"> {/* Set h-full here */}
-              {/* Header */}
+          <div className={`${styles.right} bg-gray-100 md:mt-0 md:block md:h-full hidden w-1/4 flex-grow`}>
+            {/* <div className="flex flex-col items-center bg-white shadow-lg rounded-lg overflow-hidden"> {/* Set h-full here */}
+            {/* Header *
               <div className="bg-blue-700 w-full flex items-center justify-center">
                 <img src="https://ik.imagekit.io/clwpujdp2/Alumni%20Website/logo.PNG?updatedAt=1712849907292" alt="" />
               </div>
 
-              {/* List of options */}
-              <div className="bg-blue-500 text-white py-10 px-8 text-center w-full flex-grow"> {/* Use flex-grow for full height */}
+              {/* List of options *
+              <div className="bg-blue-500 text-white py-10 px-8 text-center w-full flex-grow"> {/* Use flex-grow for full height 
                 <ul className="list-none space-y-4 text-lg">
                   <li>• CREATE YOUR PROFILE</li>
                   <li>• POST JOBS AND INTERNSHIPS</li>
@@ -171,13 +175,14 @@ function HomePage() {
                 </ul>
               </div>
 
-              {/* Explore button */}
+              {/* Explore button *
               <div className="w-full flex justify-center py-6 bg-white">
                 <button className="bg-blue-600 text-white py-2 px-6 rounded-full font-semibold hover:bg-blue-700 transition duration-300">
                   EXPLORE
                 </button>
               </div>
-            </div>
+            </div> */}
+            <img src="home.jpg" className="h-full object-cover" alt="" />
           </div>
         </div >
       </section >
@@ -268,7 +273,7 @@ function HomePage() {
             <ul className="mt-5 space-y-4">
               {events.map((event) => (
                 <li key={event.id}>
-                  <a href="http://localhost:5173/event1" className="text-blue-500 hover:underline">
+                  <a href={event.href} className="text-blue-500 hover:underline">
                     {event.name}
                   </a>
                 </li>
