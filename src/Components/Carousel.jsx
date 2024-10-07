@@ -33,19 +33,19 @@ const Carousel = () => {
     <div className="carousel-container">
       <Slider ref={sliderRef} {...settings}>
         <div>
-          <img
+          <img className="object-cover"
             src="https://sairam.edu.in/wp-content/uploads/2024/04/veeramuthuvel-function-banner.png"
             alt="Slide 1"
           />
         </div>
         <div>
-          <img
+          <img className="object-cover"
             src="https://sairam.edu.in/wp-content/uploads/2024/04/veeramuthuvel-function-banner-1.jpg"
             alt="Slide 2"
           />
         </div>
         <div>
-          <img
+          <img className="object-cover"
             src="https://sairam.edu.in/wp-content/uploads/2024/05/Graduation-Day-1187-%C3%97-580.jpg"
             alt="Slide 3"
           />

@@ -148,42 +148,68 @@ function HomePage() {
       <Aheader />
       <Navbar2 />
 
-      {/* Carousel Section */}
-      <section className="pt-10 pl-4 pr-4 md:pl-auto sm:mr-auto md:pr-auto bg-gray-100">
-        <div className="flex flex-col md:flex-row sm:w-full">
-          <div className="lg:w-[72%] md:w-full flex justify-center"> {/* Carousel full width on mobile */}
+      <section className="p-4 bg-gray-100">
+        <div className="flex flex-col md:items-center gap-8 md:flex-row sm:w-full h-full">
+          <div className="lg:w-3/4 md:w-full flex justify-center">
+            {/* Carousel full width on mobile */}
             <Carousel />
           </div>
-          <div className={`${styles.right} bg-gray-100 mt-5 md:mt-0 md:block hidden w-1/4`}>
-            <HeroCard />
+          <div className={`${styles.right} bg-gray-100 mt-5 md:mt-0 md:block md:h-full hidden w-1/4 flex-grow`}>
+            <div className="flex flex-col items-center bg-white shadow-lg rounded-lg overflow-hidden"> {/* Set h-full here */}
+              {/* Header */}
+              <div className="bg-blue-700 w-full flex items-center justify-center">
+                <img src="https://ik.imagekit.io/clwpujdp2/Alumni%20Website/logo.PNG?updatedAt=1712849907292" alt="" />
+              </div>
+
+              {/* List of options */}
+              <div className="bg-blue-500 text-white py-10 px-8 text-center w-full flex-grow"> {/* Use flex-grow for full height */}
+                <ul className="list-none space-y-4 text-lg">
+                  <li>• CREATE YOUR PROFILE</li>
+                  <li>• POST JOBS AND INTERNSHIPS</li>
+                  <li>• SHARE MEMORIES</li>
+                  <li>• EXCHANGE OPPORTUNITIES</li>
+                </ul>
+              </div>
+
+              {/* Explore button */}
+              <div className="w-full flex justify-center py-6 bg-white">
+                <button className="bg-blue-600 text-white py-2 px-6 rounded-full font-semibold hover:bg-blue-700 transition duration-300">
+                  EXPLORE
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </div >
+      </section >
+
 
 
       {/* CEO's Message */}
-      <section className="p-4 md:p-6 bg-gray-100 font-poppins pt-5">
+      <section section className="p-4 md:p-6 bg-gray-100 font-poppins pt-5" >
         <div className="bg-white rounded-lg shadow-lg p-6 mt-5">
           <h1 className=" text-xl md:text-2xl font-medium tracking-widest text-blue-700 uppercase">CEO's Message</h1>
           <div className="flex flex-col md:flex-row p-4">
             <div className="w-full md:w-1/5 text-center mb-4">
               <img className="w-3/4 h-auto mx-auto mt-2" src="https://sairamuba.com/images/home-page-images/ceo.webp" alt="CEO" />
               <h4 className="mt-2 font-semibold tracking-widest text-gray-900 uppercase">Sri Sai Prakash Leo Muthu</h4>
-              <p className="text-sm font-medium text-gray-700">Chairman & CEO</p>
-              <p className="text-sm font-medium text-gray-700">Sairam Group of Institutions</p>
+              <p className="text-sm font-medium  ">Chairman & CEO</p>
+              <p className="text-sm font-medium ">Sairam Group of Institutions</p>
             </div>
-            <div className="w-full md:w-4/5 mt-5 md:mt-10 ml-0 md:ml-10 font-medium text-gray-700">
+            <div className="w-full md:w-4/5 flex  items-center ml-0 md:ml-10 ">
               <p className="text-justify text-lg p-2 pr-4">
                 Our alumni, who once walked these corridors as students, have soared to great heights, becoming beacons of inspiration in every field imaginable. I am filled with a sense of pride in observing their glorious growth and contribution in their chosen spheres. We connect with immense value for being SAIRAMITES forever.
+                What is truly heartwarming is the way our alumni have been consistently giving back to their alma mater, inspiring our current students.
+                <span> <br /><button onClick={handleOpenModal} className="mt-2 p-2 text-lg text-blue-700 hover:text-blue-500">Read More</button></span>
               </p>
-              <button onClick={handleOpenModal} className="mt-2 font-medium text-blue-700 hover:text-blue-500 text-lg p-2">Read More</button>
+
+
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Principal's Message */}
-      <section className="p-4 md:p-6 bg-gray-100 font-poppins">
+      <section section className="p-4 md:p-6 bg-gray-100 font-poppins" >
         <div className="bg-white rounded-lg shadow-lg p-6">
           <h1 className="text-xl md:text-2xl font-medium tracking-widest text-blue-700 uppercase">Principal's Message</h1>
           <div className="flex flex-col md:flex-row p-4">
@@ -193,17 +219,20 @@ function HomePage() {
               <p className="text-sm font-medium text-gray-700">Principal</p>
               <p className="text-sm font-medium text-gray-700">Sairam Engineering College</p>
             </div>
-            <div className="w-full md:w-4/5 mt-5 md:mt-10 mr-0 md:mr-10 font-medium text-gray-700 lg:ml-10">
+            <div className="w-full md:w-4/5 flex  items-center ml-0 md:ml-10">
               <p className="text-justify text-lg p-2 pr-8">
                 It gives us immense pleasure to observe that SAIRAM ALUMNI FRATERNITY, who emerged from
                 the hallowed halls of our esteemed institution, is gathering to rejoice and share at the same
                 campus on 18th November 2023.
+                Our alumni, the pride of Sri Sairam Engineering College, have etched their names in the annals of
+                success across various domains.
+                <br />
+                <span> <button onClick={handleOpenPrincipalModal} className="mt-2 p-2 text-lg text-blue-700 hover:text-blue-500">Read More</button></span>
               </p>
-              <button onClick={handleOpenPrincipalModal} className="mt-2 p-2 text-lg text-blue-700 hover:text-blue-500">Read More</button>
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
 
 
@@ -221,7 +250,7 @@ function HomePage() {
       />
 
       {/* Events and About Sairam Alumni Association */}
-      <section className="p-4 md:p-10 text-gray-700 bg-gray-100 font-poppins">
+      <section className="p-4 md:p-6  bg-gray-100 font-poppins">
         <div className="flex flex-col md:flex-row gap-5">
           {/* About Sairam Alumni Association Card */}
           <div className="w-full md:w-[70%] bg-white rounded-lg p-6 shadow-lg">
