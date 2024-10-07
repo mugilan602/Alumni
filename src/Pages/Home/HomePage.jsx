@@ -6,7 +6,7 @@ import Carousel from "../../Components/Carousel";
 import CustomModal from "../../Components/Modal";
 import NotableMembers from "../Notable Members/NotableMembers";
 import home from '../../assets/home.jpg';
-
+import HeroCard from "../../Components/HeroCard";
 function HomePage() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [principalModalIsOpen, setPrincipalModalIsOpen] = useState(false);
@@ -155,7 +155,7 @@ function HomePage() {
             <Carousel />
           </div>
           <div className={`${styles.right} bg-gray-100 mt-5 md:mt-0 md:block hidden w-1/4`}>
-            <img className={`${styles.image}`} src={home} alt="Sairam College" />
+            <HeroCard />
           </div>
         </div>
       </section>
